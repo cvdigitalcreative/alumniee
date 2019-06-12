@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="<?= base_url()?>assets/css/flaticon.css">
     <link rel="stylesheet" href="<?= base_url()?>assets/css/icomoon.css">
     <link rel="stylesheet" href="<?= base_url()?>assets/css/style.css">
+    <link href="<?= base_url()?>assets/fontawesome/css/all.css" rel="stylesheet">
   </head>
   <body>
     
