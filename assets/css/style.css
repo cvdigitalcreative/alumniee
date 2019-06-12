@@ -186,7 +186,7 @@ th {
   text-align: inherit; }
 
 label {
-  display: inline-block;
+  color: #000 !important;
   margin-bottom: 0.5rem; }
 
 button {
@@ -3398,7 +3398,8 @@ input[type="button"].btn-block {
     border-top-right-radius: 0; }
 
 .nav-pills .nav-link {
-  border-radius: 0.25rem; }
+  border: 1px solid #fff;
+  border-radius: 2.25rem; }
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
@@ -8880,7 +8881,7 @@ h1, h2, h3, h4, h5,
         display: none; } }
 
 .form-control {
-  height: 52px !important;
+  height: 34px !important;
   background: #fff !important;
   color: #000 !important;
   font-size: 18px;

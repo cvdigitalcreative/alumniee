@@ -5,18 +5,21 @@
 	      	<img class="one-third js-fullheight align-self-end order-md-last img-fluid" src="<?= base_url()?>assets/images/undraw_pair_programming_njlp.svg" alt="">
 	        <div class="one-forth d-flex align-items-center ftco-animate js-fullheight">
 	        	<div class="col-lg-5 p-5 ftco-wrap ftco-animate">
-		              <form action="#">
+		              <form action="<?= base_url()?>Login/auth" method="post">
 			              <div class="form-group">
-			                <input type="text" class="form-control" placeholder="Username">
+			                <input type="email" class="form-control" placeholder="Email" name="email" required>
 			              </div>
 			              <div class="form-group">
-			                <input type="password" class="form-control" placeholder="Password">
+			                <input type="password" class="form-control" placeholder="Password" name="password" required>
 			              </div>
+                    <div>
+                      <?php echo $this->session->flashdata('msgg');?>
+                    </div>
 			              <div class="form-group">
 			                <input type="submit" value="Login" class="btn btn-primary py-3 px-5">
 			              </div>
 			            </form>
-		           <p>Don't have an account? <a href="<?= base_url()?>Register">Sign up for free</a></p>
+		           <p>Don't have an account?<a href="<?= base_url()?>Register">Sign up for free</a></p>
     			</div>
 	        </div>
 	    	</div>
@@ -48,3 +51,21 @@
     
   </body>
 </html>
+
+<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/css/jquery.toast.min.css">
+<script src="<?php echo base_url().'assets/js/jquery.toast.min.js'?>"></script>
+<?php if($this->session->flashdata('msg')=='success'):?>
+        <script type="text/javascript">
+                $.toast({
+                    heading: 'Success',
+                    text: "Register Success",
+                    showHideTransition: 'slide',
+                    icon: 'info',
+                    loader: true,        // Change it to false to disable loader
+                    loaderBg: '#ffffff',
+                    position: 'top-right',
+                    bgColor: '#7EC857'
+                });
+        </script>
+<?php else:?>
+<?php endif;?>
