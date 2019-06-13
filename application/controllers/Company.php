@@ -11,11 +11,11 @@
 
     	function index(){
         
-        if($this->session->userdata('akses') == 2){
-           $this->load->view('v_companyD'); 
-        }else{
-            redirect('Login');
-        }
+            if($this->session->userdata('akses') == 2){
+               $this->load->view('v_companyD'); 
+            }else{
+                redirect('Login');
+            }
         	
     	}
 

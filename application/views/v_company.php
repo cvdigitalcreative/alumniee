@@ -198,7 +198,7 @@
               <div class="tab-pane fade" id="v-pills-performance" role="tabpanel" aria-labelledby="v-pills-performance-tab">
                 <div class="d-md-flex">
 	              	<div class="one-forth order-last align-self-center">
-	              		<img src="images/undraw_visual_data_b1wx.svg" class="img-fluid" alt="">
+	              		<img src="<?= base_url()?>assets/images/undraw_visual_data_b1wx.svg" class="img-fluid" alt="">
 	              	</div>
 	              	<div class="one-half order-first mr-md-5 align-self-center">
 		                <h2 class="mb-4">Performance VPS hosting</h2>
@@ -212,7 +212,7 @@
               <div class="tab-pane fade" id="v-pills-effect" role="tabpanel" aria-labelledby="v-pills-effect-tab">
                 <div class="d-md-flex">
 	              	<div class="one-forth align-self-center">
-	              		<img src="images/undraw_business_plan_5i9d.svg" class="img-fluid" alt="">
+	              		<img src="<?= base_url()?>assets/images/undraw_business_plan_5i9d.svg" class="img-fluid" alt="">
 	              	</div>
 	              	<div class="one-half ml-md-5 align-self-center">
 		                <h2 class="mb-4">Effective VPS hosting</h2>
@@ -228,4 +228,170 @@
     	</div>
     </section>
 
-    
+    <section class="ftco-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center pb-3">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <h2 class="mb-4">Our Pricing</h2>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-lg-6 col-md-6 ftco-animate">
+            <div class="block-7" style="border: 3px solid #6fb8ef;border-radius: 0 50px 0 50px;">
+              <div class="text-center">
+                <h2 class="heading">Free</h2>
+                <span class="price"><sup>$</sup> <span class="number">0<small class="per">/mo</small></span>
+                <span class="excerpt d-block">100% free. Forever</span>
+                <h3 class="heading-2 mb-3">Enjoy All The Features</h3>
+                <a href="#" class="btn btn-primary d-block px-3 py-3 mb-4">FREE</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 ftco-animate">
+            <div class="block-7" style="border: 3px solid #6fb8ef;border-radius: 50px 0 50px 0;">
+              <div class="text-center">
+                <h2 class="heading">Premium</h2>
+                <span class="price"><sup>Rp</sup> <span class="number">2 Juta<small class="per">/mo</small></span></span>
+                <span class="excerpt d-block">All features are included</span>
+                <h3 class="heading-2 mb-3">Enjoy All The Features</h3>
+                <div class="col-lg-6 col-md-6 pb-2" style="margin-right: auto;margin-left: auto;">
+                  <select class="form-control" style="border-radius: 20px">
+                  <option value="volvo" >Rp 2 jt</option>
+                  <option value="volvo">Rp 2 jt</option>
+                  <option value="volvo">Rp 2 jt</option>
+                  <option value="volvo">Rp 2 jt</option>
+                </select> 
+                </div>
+                
+                <a href="#" class="btn btn-primary d-block px-3 py-3 mb-4">Choose Plan</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center pb-3">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <h2 class="mb-4">A better way to hire</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 ftco-animate">
+            <table id="customers" >
+              <tr>
+                <th></th>
+                <th>
+                  <div>Contact</div>
+                  <div>Conrat</div>
+                </th>
+                <th>Country</th>
+                <th>Country</th>
+              </tr>
+              <tr>
+                <td></span></td>
+                <td><span class="fa fa-check"></td>
+                <td>Germany</td>
+                <td>Germany</td>
+              </tr>
+              <tr>
+                <td>Berglunds snabbköp</td>
+                <td><span class="fa fa-check"></td>
+                <td>Sweden</td>
+                <td>Germany</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <h2 class="mb-4">Your Question</h2>
+            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 ftco-animate">
+            <div id="accordion">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card">
+                    <div class="card-header">
+                      <a class="card-link" data-toggle="collapse"  href="#menuone" aria-expanded="false" aria-controls="menuone">What is your domain name? <span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
+                    </div>
+                    <div id="menuone" class="collapse">
+                      <div class="card-body">
+                        <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-header">
+                      <a class="card-link" data-toggle="collapse"  href="#menutwo" aria-expanded="false" aria-controls="menutwo">How long is my domain name valid? <span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
+                    </div>
+                    <div id="menutwo" class="collapse">
+                      <div class="card-body">
+                        <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-header">
+                      <a class="card-link" data-toggle="collapse"  href="#menu3" aria-expanded="false" aria-controls="menu3">Can I sell my domain name? <span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
+                    </div>
+                    <div id="menu3" class="collapse">
+                      <div class="card-body">
+                        <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="card">
+                    <div class="card-header">
+                      <a class="card-link" data-toggle="collapse"  href="#menu4" aria-expanded="false" aria-controls="menu4">Can I cancel a domain? <span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
+                    </div>
+                    <div id="menu4" class="collapse">
+                      <div class="card-body">
+                        <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-header">
+                      <a class="card-link" data-toggle="collapse"  href="#menu5" aria-expanded="false" aria-controls="menu5">How do I transfer a domain name? <span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
+                    </div>
+                    <div id="menu5" class="collapse">
+                      <div class="card-body">
+                        <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-header">
+                      <a class="card-link" data-toggle="collapse"  href="#menu6" aria-expanded="false" aria-controls="menu6">How do I setup URL forwarding? <span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
+                    </div>
+                    <div id="menu6" class="collapse">
+                      <div class="card-body">
+                        <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
