@@ -7,10 +7,10 @@
 	      	<img class="one-third js-fullheight align-self-end order-md-last img-fluid" src="<?= base_url()?>assets/images/undraw_pair_programming_njlp.svg" alt="">
 	        <div class="one-forth d-flex align-items-center ftco-animate js-fullheight">
 	        	<div class="text mt-5">
-	        		<span class="subheading">Isometric Hosting</span>
-	            <h1 class="mb-3"><span>Design,</span> <span>Development,</span> <span>Hosting</span></h1>
-	            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-	            <p><a href="#" class="btn btn-primary px-4 py-3">Get in touch</a></p>
+	        		
+	            <h1 class="mb-3">Build Your Team, Build Your Dream</h1>
+	            <p>Temukan talent yang sesuai dengan perusahaan anda</p>
+	            <p><a href="#" class="btn btn-primary px-4 py-3">Search a Talent</a></p>
 	          </div>
 	        </div>
 	    	</div>
@@ -23,7 +23,7 @@
       	<div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 text-center heading-section ftco-animate">
             <h2 class="mb-4">Why Choose Us</h2>
-            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+            <p>Alumne memudahkan anda dalam menemukan talent-talent yang sesuai dengan keinginan perusahaan</p>
           </div>
         </div>
         <div class="row">
@@ -33,8 +33,8 @@
             		<span class="flaticon-cloud"></span>
             	</div>
               <div class="media-body pl-4 pl-md-0 pr-md-4 text-md-right">
-                <h3 class="heading">Super Fast Server</h3>
-                <p class="mb-0">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                <h3 class="heading">Murah</h3>
+                <p class="mb-0">Perusahaan </p>
               </div>
             </div>      
           </div>
