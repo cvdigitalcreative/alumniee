@@ -198,7 +198,7 @@
               <div class="tab-pane fade" id="v-pills-performance" role="tabpanel" aria-labelledby="v-pills-performance-tab">
                 <div class="d-md-flex">
 	              	<div class="one-forth order-last align-self-center">
-	              		<img src="images/undraw_visual_data_b1wx.svg" class="img-fluid" alt="">
+	              		<img src="<?= base_url()?>assets/images/undraw_visual_data_b1wx.svg" class="img-fluid" alt="">
 	              	</div>
 	              	<div class="one-half order-first mr-md-5 align-self-center">
 		                <h2 class="mb-4">Performance VPS hosting</h2>
@@ -212,7 +212,7 @@
               <div class="tab-pane fade" id="v-pills-effect" role="tabpanel" aria-labelledby="v-pills-effect-tab">
                 <div class="d-md-flex">
 	              	<div class="one-forth align-self-center">
-	              		<img src="images/undraw_business_plan_5i9d.svg" class="img-fluid" alt="">
+	              		<img src="<?= base_url()?>assets/images/undraw_business_plan_5i9d.svg" class="img-fluid" alt="">
 	              	</div>
 	              	<div class="one-half ml-md-5 align-self-center">
 		                <h2 class="mb-4">Effective VPS hosting</h2>
