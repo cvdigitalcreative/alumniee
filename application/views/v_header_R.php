@@ -28,40 +28,18 @@
     <link href="<?= base_url()?>assets/fontawesome/css/all.css" rel="stylesheet">
   </head>
   <body>
-    
-	  <style>
-        body {
-          margin: 0;
-        }
-
-        .topnav {
-          overflow: hidden;
-          background-color: #fff;
-          border-bottom: 1px solid #4fa4e2;
-            
-        }
-
-        .topnav a {
-            border: 2px solid #4fa4e2;
-            border-radius: 25px;
-            float: right;
-            color: #000;
-            text-align: center;
-            padding: 5px 15px;
-            text-decoration: none;
-            font-size: 15px;
-            margin: 5px 0 5px 0;
-        }
-
-        .topnav a:hover {
-          background-color: #000;
-          color: #fff;
-        }
-
-        
-        </style>
-
         <div class="topnav">
-          <a class="active" href="#home"><i>M.Puji Lesmana</i>, <b>Log Out</b> <span class="fa fa-sign-out-alt"></span></a>
+          <div class="fr" style="margin: 5px 5px 5px 0;">
+              <a href="<?=base_url()?>Login/Logout" style="border: 2px solid #4fa4e2 !important;
+            border-radius: 25px !important;"><i><?= $this->session->userdata('nama')?></i>, <b>Log Out</b> <span class="fa fa-sign-out-alt"></span></a>
+          </div>
+          <div style="display: flex;"> 
+                <div style="margin: 5px 0 5px 5px;">
+                    <a href="<?=base_url()?>Login/Logout"><span class="fa fa-user"></span> Jobs</a>
+                </div>
+                <div style="margin: 5px 0 5px 5px;">
+                  <a href="<?=base_url()?>Talent"><span class="fa fa-user"></span> Profile</a>
+                </div>
+          </div>
         </div>
     <!-- END nav -->

@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.2
--- https://www.phpmyadmin.net/
+-- version 4.5.1
+-- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 11, 2019 at 02:54 PM
--- Server version: 10.1.34-MariaDB
--- PHP Version: 7.2.8
+-- Generation Time: Jun 13, 2019 at 06:51 AM
+-- Server version: 10.1.16-MariaDB
+-- PHP Version: 5.6.24
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -19,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `alumnee`
+-- Database: `alumniee`
 --
 
 -- --------------------------------------------------------
@@ -3347,6 +3345,86 @@ INSERT INTO `candidate` (`id`, `function`, `skill`, `salary`, `experience`, `edu
 (3301, 5, 4, 5, 2, 3, 2),
 (3302, 5, 2, 5, 4, 2, 2);
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `company`
+--
+
+CREATE TABLE `company` (
+  `company_id` int(11) NOT NULL,
+  `nama` varchar(50) DEFAULT NULL,
+  `nama_company` varchar(100) DEFAULT NULL,
+  `no_hp` varchar(30) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `password` varchar(50) DEFAULT NULL,
+  `tanggal` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `company`
+--
+
+INSERT INTO `company` (`company_id`, `nama`, `nama_company`, `no_hp`, `email`, `password`, `tanggal`) VALUES
+(1, 'Puji Company', 'Digital Creative', '2313131', 'admin@digitalcreative.web.id', '123456', '2019-06-12 13:22:18');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `database`
+--
+
+CREATE TABLE `database` (
+  `id_db` int(11) NOT NULL,
+  `nama_db` varchar(50) NOT NULL,
+  `bobot` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `framework`
+--
+
+CREATE TABLE `framework` (
+  `id_fw` int(11) NOT NULL,
+  `nama_fw` varchar(50) NOT NULL,
+  `bobot_fw` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `programming_language`
+--
+
+CREATE TABLE `programming_language` (
+  `id_pl` int(11) NOT NULL,
+  `nama_pl` varchar(50) NOT NULL,
+  `bobot_pl` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `talent`
+--
+
+CREATE TABLE `talent` (
+  `talent_id` int(11) NOT NULL,
+  `nama` varchar(50) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `password` varchar(50) DEFAULT NULL,
+  `tanggal` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `talent`
+--
+
+INSERT INTO `talent` (`talent_id`, `nama`, `email`, `password`, `tanggal`) VALUES
+(1, 'M.Puji Lesmana', 'muhammadpuji63@gmail.com', '123456', '2019-06-12 08:56:19');
+
 --
 -- Indexes for dumped tables
 --
@@ -3358,6 +3436,36 @@ ALTER TABLE `candidate`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `company`
+--
+ALTER TABLE `company`
+  ADD PRIMARY KEY (`company_id`);
+
+--
+-- Indexes for table `database`
+--
+ALTER TABLE `database`
+  ADD PRIMARY KEY (`id_db`);
+
+--
+-- Indexes for table `framework`
+--
+ALTER TABLE `framework`
+  ADD PRIMARY KEY (`id_fw`);
+
+--
+-- Indexes for table `programming_language`
+--
+ALTER TABLE `programming_language`
+  ADD PRIMARY KEY (`id_pl`);
+
+--
+-- Indexes for table `talent`
+--
+ALTER TABLE `talent`
+  ADD PRIMARY KEY (`talent_id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -3366,8 +3474,31 @@ ALTER TABLE `candidate`
 --
 ALTER TABLE `candidate`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3303;
-COMMIT;
-
+--
+-- AUTO_INCREMENT for table `company`
+--
+ALTER TABLE `company`
+  MODIFY `company_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `database`
+--
+ALTER TABLE `database`
+  MODIFY `id_db` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `framework`
+--
+ALTER TABLE `framework`
+  MODIFY `id_fw` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `programming_language`
+--
+ALTER TABLE `programming_language`
+  MODIFY `id_pl` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `talent`
+--
+ALTER TABLE `talent`
+  MODIFY `talent_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
