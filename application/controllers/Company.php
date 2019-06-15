@@ -12,7 +12,7 @@
     	function index(){
         
             if($this->session->userdata('akses') == 2){
-               $this->load->view('v_header_R'); 
+               $this->load->view('v_header_C'); 
                $this->load->view('v_companyD'); 
             }else{
                 redirect('Login');

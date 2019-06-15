@@ -202,23 +202,47 @@
               <tr>
                 <th></th>
                 <th>
-                  <div>Contact</div>
-                  <div>Conrat</div>
+                  <div>Job Boards</div>
+                  <div><p><i>Too time-Consuming</i></p></div>
                 </th>
-                <th>Country</th>
-                <th>Country</th>
+                <th>
+                  <div style="font-size: 25px;">Alumne</div>
+                  <div><p><i>Save your money</i></p></div>
+                </th>
+                <th>
+                  <div>Recruiters</div>
+                  <div><p><i>Too Expensive</i></p></div>
+                </th>
               </tr>
               <tr>
-                <td></span></td>
+                <td>No active selling of candidates or roles*</td>
                 <td><span class="fa fa-check"></td>
-                <td>Germany</td>
-                <td>Germany</td>
+                <td><span class="fa fa-check"></td>
+                <td></td>
               </tr>
               <tr>
-                <td>Berglunds snabbköp</td>
+                <td>Delivers only pre-screened & matching applicants</td>
+                <td></td>
                 <td><span class="fa fa-check"></td>
-                <td>Sweden</td>
-                <td>Germany</td>
+                <td><span class="fa fa-check"></td>
+              </tr>
+              <tr>
+                <td>Innovative matching engine</td>
+                <td></td>
+                <td><span class="fa fa-check"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Only pay if you hire</td>
+                <td></td>
+                <td><span class="fa fa-check"></td>
+                <td><span class="fa fa-check"></td>
+              </tr>
+              <tr>
+                <td>Only pay if you hire</td>
+                <td></td>
+                <td>10%</td>
+                <td>15-20%</td>
               </tr>
             </table>
           </div>
