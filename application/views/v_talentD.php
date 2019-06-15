@@ -19,7 +19,7 @@
                                 <form action="" method="post">
                                   <div class="card" id="21">
                                     <div class="card-header">
-                                      <a class="card-link" data-toggle="collapse" id="dropdown1" href="#menuone" aria-expanded="true" aria-controls="menuone">First up, what's your work personality<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
+                                      <a class="card-link" data-toggle="collapse" id="dropdown1" href="#menuone" aria-expanded="true" aria-controls="menuone">Isi profile kriteria perusahaan yang anda cari ?<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
                                     </div>
                                     <div id="menuone" class="collapse show">
                                       <div class="card-body">
@@ -27,120 +27,120 @@
                                           
                                         <div class="card1" id="1">
                                           <div class="card-header1">
-                                            <h5>What's most important to you in your next job?</h5>
+                                            <h5>Apa hal yang terpenting bagi anda dalam mencari pekerjaan  ?</h5>
                                           </div>
                                           <div class="">
                                             <div class="mb-2">
                                               <input type='radio' value='a' name='q1' id='radio1'/>
-                                              <label for='radio1'>To have a say in what I work on and how I work</label>
+                                              <label for='radio1'>Memberikan keluasan dalam saya bekerja</label>
                                             </div>
                                             <div class="mb-2">
                                               <input type='radio' value='b' name='q1'  id='radio2'/>
-                                              <label for='radio2'>Career progression and prospects of promotion</label>
+                                              <label for='radio2'>Kemajuan karir dan prospek promosi</label>
                                             </div>
                                             <div class="mb-2">
                                               <input type='radio' value='c' name='q1'  id='radio3'/>
-                                              <label for='radio3'>The knowledge that I am doing something that will help others</label>
+                                              <label for='radio3'>visi dan misi perusahaan untuk memberikan dampak positif kepada masyarakat</label>
                                             </div>
                                             <div class="mb-2">
                                               <input type='radio' value='d' name='q1'  id='radio4'/>
-                                              <label for='radio4'>A diverse and inclusive company culture</label>
+                                              <label for='radio4'>Budaya Perusahaan yang beragam</label>
                                             </div>
                                           </div>
                                         </div>
 
                                         <div class="card1" id="2">
                                           <div class="card-header1">
-                                            <h5>These are extracts from job descriptions. Which do you think you’re best suited to?</h5>
+                                            <h5>ini adalah beberapa contoh deskripsi pekerjaan. Menurut anda mana yang paling cocok untuk anda ?</h5>
                                           </div>
                                           <div class="">
                                             <div class="mb-2">
                                               <input type='radio' value='a' name='q2' id='radio5'/>
-                                              <label for='radio5'>"Work hard, excel and overtake your peers"</label>
+                                              <label for='radio5'>"Bekerja keras,Unggul dan menyusul rekan-rekan anda"</label>
                                             </div>
                                             <div class="mb-2">
                                               <input type='radio' value='b' name='q2'  id='radio6'/>
-                                              <label for='radio6'>"The right candidate will be conscientious"</label>
+                                              <label for='radio6'>"Kandidat yang tepat memiliki ketelitian"</label>
                                             </div>
                                             <div class="mb-2">
                                               <input type='radio' value='c' name='q2'  id='radio7'/>
-                                              <label for='radio7'>"We’re looking for a creative individual"</label>
+                                              <label for='radio7'>"Kami mencari orang yang kreatif"</label>
                                             </div>
                                             <div class="mb-2">
                                               <input type='radio' value='d' name='q2'  id='radio8'/>
-                                              <label for='radio8'>"You will be given high levels of responsibility, quickly"</label>
+                                              <label for='radio8'>"Anda akan diberikan tanggung jawab tingkat tinggi."</label>
                                             </div>
                                           </div>
                                         </div>
 
                                         <div class="card1" id="3">
                                           <div class="card-header1">
-                                            <h5>Which of the following do you think is the most important to succeed?</h5>
+                                            <h5>Menurut anda, manakah dari berikut ini hal yang paling penting untuk menuju keberhasilan?</h5>
                                           </div>
                                           <div class="">
                                             <div class="mb-2">
                                               <input type='radio' value='a' name='q3' id='radio9'/>
-                                              <label for='radio9'>Working efficiently to hit your targets</label>
+                                              <label for='radio9'>Bekerja secara efisien untuk mencapai target anda</label>
                                             </div>
                                             <div class="mb-2">
                                               <input type='radio' value='b' name='q3'  id='radio10'/>
-                                              <label for='radio10'>Coming up with new, innovative ideas</label>
+                                              <label for='radio10'>Muncul dengan ide-ide baru dan inovatif</label>
                                             </div>
                                             <div class="mb-2">
                                               <input type='radio' value='c' name='q3'  id='radio11'/>
-                                              <label for='radio11'>Building strong interpersonal relationships</label>
+                                              <label for='radio11'>Membangun hubungan interpersonal yang kuat</label>
                                             </div>
                                             <div class="mb-2">
                                               <input type='radio' value='d' name='q3'  id='radio12'/>
-                                              <label for='radio12'>High levels of organisation</label>
+                                              <label for='radio12'>Memiliki kemampuan mengatur orang</label>
                                             </div>
                                           </div>
                                         </div>
 
                                         <div class="card1" id="4">
                                           <div class="card-header1">
-                                            <h5>Which office perk appeals to you the most:</h5>
+                                            <h5>Suasana Kantor seperti apa yang anda inginkan ? </h5>
                                           </div>
                                           <div class="">
                                             <div class="mb-2">
                                               <input type='radio' value='a' name='q4' id='radio13'/>
-                                              <label for='radio13'>Access to free workshops, talks and events</label>
+                                              <label for='radio13'>Memberikan akses ke acara seminar</label>
                                             </div>
                                             <div class="mb-2">
                                               <input type='radio' value='b' name='q4'  id='radio14'/>
-                                              <label for='radio14'>An annual team ski trip</label>
+                                              <label for='radio14'>Memiliki Perjalanan Tahunan</label>
                                             </div>
                                             <div class="mb-2">
                                               <input type='radio' value='c' name='q4'  id='radio15'/>
-                                              <label for='radio15'>Volunteer time off</label>
+                                              <label for='radio15'>Waktu Istirahat yang bebas</label>
                                             </div>
                                             <div class="mb-2">
                                               <input type='radio' value='d' name='q4'  id='radio16'/>
-                                              <label for='radio16'>Option to work from home</label>
+                                              <label for='radio16'>Diijinkan bekerja dirumah</label>
                                             </div>
                                           </div>
                                         </div>
 
                                         <div class="card1" id="5">
                                           <div class="card-header1">
-                                            <h5>What kind of environment do you work best in?</h5>
+                                            <h5>Lingkungan kantor seperti apa yang anda inginkan ?</h5>
                                           </div>
                                           <div class="">
                                             <div class="mb-2">
                                               <input type='radio' value='a' name='q5' id='radio17'/>
-                                              <label for='radio17'>Where employees operate as individuals, but are still focused on succeeding as a team</label>
+                                              <label for='radio17'>Karyawan beroperasi secara individu, tetapi fokus pada target yang diingikan tim</label>
                                             </div>
                                             <div class="mb-2">
                                               <input type='radio' value='b' name='q5'  id='radio18'/>
-                                              <label for='radio18'>Where no two days are the same and you are constantly kept on your toes</label>
+                                              <label for='radio18'>Dimana tidak ada dua hari yang sama dalam pekerjaan </label>
                                             </div>
                                             <div class="mb-2">
                                               <input type='radio' value='c' name='q5'  id='radio19'/>
-                                              <label for='radio19'>Where targets are clearly set and there are deadlines to work to</label>
+                                              <label for='radio19'>Dimana target ditetapkan dengan jelas dan ada tenggat waktu untuk menyelesaikannya</label>
                                             </div>
                                             <div class="mb-2">
                                               <input type='radio' value='d' name='q5'  id='radio20'/>
-                                              <label for='radio20'>Where building relationships and collaboration are crucial to success</label>
+                                              <label for='radio20'>Dimana Membangun hubungan dan kolaborasi sangat penting untuk kesuksesaan</label>
                                             </div>
                                           </div>
                                         </div>
@@ -152,13 +152,13 @@
 
                                   <div class="card" id="22">
                                     <div class="card-header">
-                                      <a class="card-link" data-toggle="collapse" id="dropdown2" href="#menutwo" aria-expanded="false" aria-controls="menutwo">What kind of jobs are you interested in?<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
+                                      <a class="card-link" data-toggle="collapse" id="dropdown2" href="#menutwo" aria-expanded="false" aria-controls="menutwo">Pekerjaan apa yang anda minat ?<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
                                     </div>
                                     <div id="menutwo" class="collapse">
                                       <div class="card-body">
                                         <div class="card1" id="5">
                                           <div class="card-header1">
-                                            <h5>What's most important to you in your next job?</h5>
+                                            <h5>Anda ingin bekerja pada bidang ?</h5>
                                           </div>
                                           <div class="">
                                             <div class="mt-2 checkboxp">
@@ -175,7 +175,7 @@
                                             </div>
                                           </div>
                                           <div class="card-header1" style="margin-top:10px;">
-                                            <h5>What is your salary expectation?</h5>
+                                            <h5>Berapa gaji yang anda inginkan ?</h5>
                                           </div>
                                           <div class="">
                                             <select class="select-next">
@@ -202,7 +202,7 @@
 
                                   <div class="card" id="23">
                                     <div class="card-header">
-                                      <a class="card-link" data-toggle="collapse" id="dropdown3" href="#menu3" aria-expanded="false" aria-controls="menu3">What degrees and qualifications do you have or are working towards ?<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
+                                      <a class="card-link" data-toggle="collapse" id="dropdown3" href="#menu3" aria-expanded="false" aria-controls="menu3">Lulusan darimanakah anda  ?<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
                                     </div>
                                     <div id="menu3" class="collapse">
                                       <div class="card-body">
@@ -210,7 +210,7 @@
                                           <div class="col-lg-12" style="margin:0px;padding: 0px;">
                                             <div class="wid50 checkboxp" style="margin:0px;padding: 0px;">
                                               <div class="card-header1">
-                                                <h5>University</h5>
+                                                <h5>Universitas</h5>
                                               </div>
                                               <div class="input-next">
                                                 <input type="text" name="">
@@ -252,13 +252,13 @@
 
                                   <div class="card" id="24">
                                     <div class="card-header">
-                                      <a class="card-link" data-toggle="collapse" id="dropdown4" href="#menu4" aria-expanded="false" aria-controls="menu4">Where would you like to work?<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
+                                      <a class="card-link" data-toggle="collapse" id="dropdown4" href="#menu4" aria-expanded="false" aria-controls="menu4">Dimana anda ingin bekerja ?<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
                                     </div>
                                     <div id="menu4" class="collapse">
                                       <div class="card-body">
                                         <div class="card1" id="6">
                                           <div class="card-header1">
-                                            <h5>Location</h5>
+                                            <h5>Lokasi </h5>
                                           </div>
                                           <div class="">
                                             <div class="mt-2 checkboxp">
@@ -408,13 +408,13 @@
 
                                   <div class="card" id="25">
                                     <div class="card-header">
-                                      <a class="card-link" data-toggle="collapse" id="dropdown5" href="#menu5" aria-expanded="false" aria-controls="menu5">What skills do you have?<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
+                                      <a class="card-link" data-toggle="collapse" id="dropdown5" href="#menu5" aria-expanded="false" aria-controls="menu5">Skils apa yang anda miliki ?<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
                                     </div>
                                     <div id="menu5" class="collapse">
                                       <div class="card-body">
                                         <div class="card1" id="5">
                                           <div class="card-header1">
-                                            <h5>Language</h5>
+                                            <h5>Bahasa </h5>
                                           </div>
                                           <div class="">
                                             <div class="mt-2 checkboxp">
@@ -427,7 +427,7 @@
                                             </div>
                                           </div>
                                           <div class="card-header1" style="margin-top: 10px;">
-                                            <h5>Skill : Programming Language</h5>
+                                            <h5>Bahasa Pemograman ?</h5>
                                           </div>
                                           <div class="">
                                             <div class="mt-2 checkboxp">
@@ -453,7 +453,7 @@
                                           </div>
 
                                           <div class="card-header1" style="margin-top: 10px;">
-                                            <h5>Skill : Database</h5>
+                                            <h5>Database</h5>
                                           </div>
                                           <div class="">
                                             <div class="mt-2 checkboxp">
@@ -479,7 +479,7 @@
                                           </div>
 
                                           <div class="card-header1" style="margin-top: 10px;">
-                                            <h5>Skill : Framework</h5>
+                                            <h5>Framework</h5>
                                           </div>
                                           <div class="">
                                             <div class="mt-2 checkboxp">
@@ -512,7 +512,7 @@
 
                                   <div class="card" id="26">
                                     <div class="card-header">
-                                      <a class="card-link" data-toggle="collapse" id="dropdown6" href="#menu6" aria-expanded="false" aria-controls="menu6">What work experience do you have?<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
+                                      <a class="card-link" data-toggle="collapse" id="dropdown6" href="#menu6" aria-expanded="false" aria-controls="menu6">Apakah anda memiliki pengalaman pekerjaan ?<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
                                     </div>
                                     <div id="menu6" class="collapse">
                                       <div id="dynamic_field">
