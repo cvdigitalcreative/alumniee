@@ -21,13 +21,14 @@
                                           
                                         <div class="card1" id="1" >
                                           <div class="card-header1">
-                                            <h6>Title</h6>
+                                            <h6>Title <i for="title"></i></h6>
                                           </div>
                                           <div class="input-next mb-2">
                                             <input type="text" name="title">
                                           </div>
-                                          <div class="card-header1 mt-3">
-                                            <h6>Job Function</h6>
+                                          <div class="card-header1 mt-3" >
+                                            
+                                            <h6>Job Function <i for="sc1"></i></h6>
                                           </div>
                                           <div id="job">
                                             <div class="checkboxp">
@@ -44,7 +45,7 @@
                                             </div>
                                           </div>
                                           <div class="card-header1 mt-3">
-                                            <h6>Location</h6>
+                                            <h6>Location <i for="sc2"></i></h6>
                                           </div>
                                           <div class="">
                                             <div class="checkboxp">
@@ -208,7 +209,7 @@
                                           </div>
                                           <div class="">
                                               <div class="card-header1 mt-3">
-                                                <h6>Jurusan</h6>
+                                                <h6>Jurusan <i for="sc3"></i></h6>
                                               </div>
                                               <div class="mb-2 checkboxp">
                                                 <input type='checkbox' value='Sistem Komputer' name='sc3' id='checkbox38'/>
@@ -225,7 +226,7 @@
                                           </div>
                                           <div class="">
                                               <div class="card-header1 mt-3">
-                                                <h6>IPK</h6>
+                                                <h6>IPK <i for="sc4"></i></h6>
                                               </div>
                                               <div class="mb-2 checkboxp">
                                                 <input type='checkbox' value='1' name='sc4' id='checkbox41'/>
@@ -241,7 +242,7 @@
                                               </div>
                                           </div>
                                           <div class="card-header1 mt-3">
-                                            <h6>Language</h6>
+                                            <h6>Language <i for="sc5"></i></h6>
                                           </div>
                                           <div class="">
                                             <div class=" checkboxp">
@@ -256,6 +257,7 @@
                                           <div class="">
                                           
                                           <div class="card-header1" style="margin-top: 10px;">
+                                            <i for="sc6"></i>
                                             <h6>Skill : Programming Language</h6>
                                           </div>
                                           
@@ -345,10 +347,10 @@
                                       <div class="card-body">
                                         <div class="card1" id="5">
                                           <div class="card-header1">
-                                            <h6>Company URL</h6>
+                                            <h6>Company URL <i for="url"></i></h6>
                                           </div>
                                           <div class="input-next mb-2">
-                                            <input type="text" name="title">
+                                            <input type="text" name="url">
                                             <h6><i>This is a link a candidate can click on to find out more about your company</i></h6>
                                           </div>
                                           <div class="card-header1 mt-3" >
@@ -381,10 +383,10 @@
                                           <div id="dynamic_field">
                                             <div>
                                               <div class="card-header1">
-                                                <h6>Questions 1</h6>
+                                                <h6>Questions 1<i for="ques[]"></i></h6>
                                               </div>
                                               <div class="input-next mb-2">
-                                                <input type="text" name="title">
+                                                <input type="text" name="ques[]">
                                               </div>
                                             </div>
 
@@ -468,7 +470,7 @@
   var i=1;
   $('#add').click(function(){
     i++;
-    $('#dynamic_field').append('<div id="row'+i+'"><div class="card-header1"><h6 style="display:inline-block;">Questions '+i+'</h6><button type="button" id="'+i+'" class="close-container1 btn_remove"><i class="fa fa-window-close"></i></button></div><div class="input-next mb-2"><input type="text" name="title"></div></div>  ');
+    $('#dynamic_field').append('<div id="row'+i+'"><div class="card-header1"><h6 style="display:inline-block;">Questions '+i+' <i for="ques[]"></i></h6><button type="button" id="'+i+'" class="close-container1 btn_remove"><i class="fa fa-window-close"></i></button></div><div class="input-next mb-2"><input type="text" name="title"></div></div>  ');
   });
 
   $(document).on('click', '.btn_remove', function(){
@@ -482,49 +484,93 @@
   $(document).ready(function() {
 
       $('#mylove').validate({ // initialize the plugin
+        errorPlacement: function(error, element) {
+          // Append error within linked label
+          $( element )
+            .closest( "form" )
+              .find( "i[for='" + element.attr( "name" ) + "']" )
+                .append( error );
+        },
+        errorElement: "span",
         rules: {
             'title': {
                 required: true
             },'sc1': {
+                required: true
+            },'sc2': {
+                required: true
+            },'sc3': {
+                required: true
+            },'sc4': {
+                required: true
+            },'sc5': {
+                required: true
+            },'sc6': {
+                required: true
+            },'url': {
+                required: true
+            }
+            ,'ques[]': {
                 required: true
             }
             
         },
         messages: {
             'title': {
-                required: "You must check at least 1 box"
+                required: "(Required)"
             },
-            '#job': {
-                required: "You must check at least 1 box"
+            'sc1': {
+                required: "(You must check at least 1 box)"
+            },
+            'sc2': {
+                required: "(You must check at least 1 box)"
+            },
+            'sc3': {
+                required: "(You must check at least 1 box)"
+            },
+            'sc4': {
+                required: "(You must check at least 1 box)"
+            },
+            'sc5': {
+                required: "(You must check at least 1 box)"
+            },
+            'sc6': {
+                required: "(You must check at least 1 box)"
+            },
+            'url': {
+                required: "(Required)"
+            },
+            'ques[]': {
+                required: "(Required)"
             }
         },
     });
       $(".button1").click(function() {
-          $("#mylove").valid();
-          // $( "#dropdown1").attr("aria-expanded","false");
-          // $("#dropdown1").toggleClass("d-active");
-          // $("#menuone").toggleClass("show");
-          // $("#dropdown2").attr("href","#menutwo");
-          // $("#dropdown2").attr("aria-expanded","true");
-          // $("#dropdown2").toggleClass("d-active");
-          // $("#menutwo").toggleClass("show");
-          
-        });
-
-      $(".button2").click(function() {
-
-          $("#dropdown2").attr("aria-expanded","false");
+        if($("#mylove").valid()){
+          $("#dropdown2").attr("aria-expanded","true");
+          $("#dropdown1").toggleClass("d-active");
+          $("#menuone").toggleClass("show");
+          $("#dropdown2").attr("href","#menutwo");
+          $("#dropdown2").attr("aria-expanded","true");
           $("#dropdown2").toggleClass("d-active");
           $("#menutwo").toggleClass("show");
-          $("#dropdown3").attr("href","#menu3");
-          $("#dropdown3").attr("aria-expanded","true");
-          $("#dropdown3").toggleClass("d-active");
-          $("#menu3").toggleClass("show");
-          
+        } 
+      });
+
+      $(".button2").click(function() {
+          if($("#mylove").valid()){
+            $("#dropdown2").attr("aria-expanded","false");
+            $("#dropdown2").toggleClass("d-active");
+            $("#menutwo").toggleClass("show");
+            $("#dropdown3").attr("href","#menu3");
+            $("#dropdown3").attr("aria-expanded","true");
+            $("#dropdown3").toggleClass("d-active");
+            $("#menu3").toggleClass("show");
+          }
         });
 
       $(".button3").click(function() {
-
+        if($("#mylove").valid()){
           $("#dropdown3").attr("aria-expanded","false");
           $("#dropdown3").toggleClass("d-active");
           $("#menu3").toggleClass("show");
@@ -532,51 +578,11 @@
           $("#dropdown4").attr("aria-expanded","true");
           $("#dropdown4").toggleClass("d-active");
           $("#menu4").toggleClass("show");
-          
+        }
       });
   });
 
 
-  function nextPrev(n) {
-    // This function will figure out which tab to display
-    var x = document.getElementsByClassName("tab");
-    // Exit the function if any field in the current tab is invalid:
-    if (n == 1 && !validateForm()) return false;
-    // Hide the current tab:
-    x[currentTab].style.display = "none";
-    // Increase or decrease the current tab by 1:
-    currentTab = currentTab + n;
-    // if you have reached the end of the form...
-    if (currentTab >= x.length) {
-      // ... the form gets submitted:
-      document.getElementById("regForm").submit();
-      return false;
-    }
-    // Otherwise, display the correct tab:
-    showTab(currentTab);
-  }
-
-  function validateForm() {
-    // This function deals with validation of the form fields
-    var x, y, i, valid = true;
-    x = document.getElementsByClassName("tab");
-    y = x[currentTab].getElementsByTagName("input");
-    // A loop that checks every input field in the current tab:
-    for (i = 0; i < y.length; i++) {
-      // If a field is empty...
-      if (y[i].value == "") {
-        // add an "invalid" class to the field:
-        y[i].className += " invalid";
-        // and set the current valid status to false
-        valid = false;
-      }
-    }
-    // If the valid status is true, mark the step as finished and valid:
-    if (valid) {
-      document.getElementsByClassName("step")[currentTab].className += " finish";
-    }
-    return valid; // return the valid status
-  }
 
 
 </script>
@@ -870,5 +876,7 @@ input[type]:checked + label {
   background: #fff;
   border-color: #fff;
 }
+
+span.error { color: red; }
 
 </style>
