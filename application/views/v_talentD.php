@@ -179,6 +179,8 @@
                                           </div>
                                           <div class="">
                                             <select class="select-next">
+                                               <option value="1000000">Rp. 1.000.000</option>
+                                               <option value="2000000">Rp. 2.000.000</option>
                                               <option value="3000000">Rp. 3.000.000</option>
                                               <option value="4000000">Rp. 4.000.000</option>
                                               <option value="5000000">Rp. 5.000.000</option>
@@ -304,6 +306,18 @@
                                             <div class="mt-2 checkboxp">
                                               <input type='checkbox' value="Jakarta" name='s2'  id='checkbox14'/>
                                               <label for='checkbox14'>Jakarta</label>
+                                            </div>
+                                             <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value="Jakarta" name='s2'  id='checkbox14'/>
+                                              <label for='checkbox14'>Tanggerang</label>
+                                            </div>
+                                             <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value="Jakarta" name='s2'  id='checkbox14'/>
+                                              <label for='checkbox14'>Bekasi</label>
+                                            </div>
+                                             <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value="Jakarta" name='s2'  id='checkbox14'/>
+                                              <label for='checkbox14'>Bogor</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
                                               <input type='checkbox' value="Bandung" name='s2'  id='checkbox15'/>
