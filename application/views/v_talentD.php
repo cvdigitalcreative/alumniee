@@ -308,15 +308,15 @@
                                               <label for='checkbox14'>Jakarta</label>
                                             </div>
                                              <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Jakarta" name='s2'  id='checkbox14'/>
+                                              <input type='checkbox' value="Tanggerang" name='s2'  id='checkbox14'/>
                                               <label for='checkbox14'>Tanggerang</label>
                                             </div>
                                              <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Jakarta" name='s2'  id='checkbox14'/>
+                                              <input type='checkbox' value="Bekasi" name='s2'  id='checkbox14'/>
                                               <label for='checkbox14'>Bekasi</label>
                                             </div>
                                              <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Jakarta" name='s2'  id='checkbox14'/>
+                                              <input type='checkbox' value="Bogor" name='s2'  id='checkbox14'/>
                                               <label for='checkbox14'>Bogor</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
@@ -432,11 +432,11 @@
                                           </div>
                                           <div class="">
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value='1' name='s3' id='checkbox38'/>
+                                              <input type='checkbox' value='English' name='s3' id='checkbox38'/>
                                               <label for='checkbox38'>English</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value='2' name='s3'  id='checkbox39'/>
+                                              <input type='checkbox' value='Indonesian' name='s3'  id='checkbox39'/>
                                               <label for='checkbox39'>Indonesian</label>
                                             </div>
                                           </div>
@@ -497,23 +497,23 @@
                                           </div>
                                           <div class="">
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value='1' name='s5' id='checkbox51'/>
+                                              <input type='checkbox' value='Android' name='s5' id='checkbox51'/>
                                               <label for='checkbox51'>Android</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value='2' name='s5'  id='checkbox52'/>
+                                              <input type='checkbox' value='Angular' name='s5'  id='checkbox52'/>
                                               <label for='checkbox52'>Angular</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value='2' name='s5'  id='checkbox53'/>
+                                              <input type='checkbox' value='Spring' name='s5'  id='checkbox53'/>
                                               <label for='checkbox53'>Spring</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value='2' name='s5'  id='checkbox54'/>
+                                              <input type='checkbox' value='CodeIgniter' name='s5'  id='checkbox54'/>
                                               <label for='checkbox54'>CodeIgniter</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value='2' name='s5'  id='checkbox55'/>
+                                              <input type='checkbox' value='React' name='s5'  id='checkbox55'/>
                                               <label for='checkbox55'>React</label>
                                             </div>
                                           </div>
