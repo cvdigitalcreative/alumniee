@@ -406,17 +406,17 @@
                                       
                                         <div class="card-body">
                                           <div class="card1" id="4">
-                                            
                                             <div class="input-next mb-2">
                                               <h6><i>Setiap talent yang direkrut perusahaan wajib membayar biaya 10% dari total 6 bulan gaji talent tanpa memotong gaji talent</i></h6>
                                             </div>
-                                            </div>
+                                          </div>
+                                          <div class="card-body">
+                                            <button type="Submit" class="button-next" style="margin-bottom:20px;"><span >Finish</span></button>
                                           </div>
                                         </div>
+                                    </div>
                                    
-                                        <div class="card-body">
-                                          <button type="Submit" class="button-next" style="margin-bottom:20px;"><span >Finish</span></button>
-                                        </div>
+                                        
 
                                     </div>
                                   </div>
@@ -544,7 +544,7 @@
     });
       $(".button1").click(function() {
         if($("#mylove").valid()){
-          $("#dropdown2").attr("aria-expanded","true");
+          $("#dropdown1").attr("aria-expanded","false");
           $("#dropdown1").toggleClass("d-active");
           $("#menuone").toggleClass("show");
           $("#dropdown2").attr("href","#menutwo");
@@ -578,9 +578,6 @@
         }
       });
   });
-
-
-
 
 </script>
 

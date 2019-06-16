@@ -13,12 +13,23 @@
         
             if($this->session->userdata('akses') == 2){
                $this->load->view('v_header_C'); 
-               $this->load->view('v_companyD'); 
+               $this->load->view('v_campaign'); 
             }else{
                 redirect('Login');
             }
         	
     	}
+
+        function campaign(){
+        
+            if($this->session->userdata('akses') == 2){
+               $this->load->view('v_header_C'); 
+               $this->load->view('v_companyD'); 
+            }else{
+                redirect('Login');
+            }
+            
+        }
 
 	}
 ?>

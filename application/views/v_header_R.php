@@ -35,10 +35,10 @@
           </div>
           <div style="display: flex;"> 
                 <div style="margin: 10px 0 5px 5px;">
-                    <a href="<?=base_url()?>Login/Logout"><span class="fa fa-user"></span> Jobs</a>
+                    <a href="<?=base_url()?>Talent"><span class="fa fa-user"></span> Jobs</a>
                 </div>
                 <div style="margin: 10px 0 5px 5px;">
-                  <a href="<?=base_url()?>Talent"><span class="fa fa-user"></span> Profile</a>
+                  <a href="<?=base_url()?>Talent/Profile"><span class="fa fa-user"></span> Profile</a>
                 </div>
           </div>
         </div>

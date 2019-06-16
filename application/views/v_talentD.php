@@ -7,7 +7,6 @@
                       <div class="row justify-content-center mb-5">
                         <div class="col-md-7 text-center heading-section ftco-animate">
                           <h2 class="mb-4">Your Profile</h2>
-                       
                         </div>
                       </div>
                       <div class="row">
@@ -15,8 +14,7 @@
                           <div id="accordion">
                             <div class="row">
                               <div class="col-md-12">
-                                
-                                <form action="" method="post">
+                                <form action="<?= base_url()?>Talent/saveProfile" method="post" id="mylove">
                                   <div class="card" id="21">
                                     <div class="card-header">
                                       <a class="card-link" data-toggle="collapse" id="dropdown1" href="#menuone" aria-expanded="true" aria-controls="menuone">Isi profile kriteria perusahaan yang anda cari ?<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
@@ -27,7 +25,7 @@
                                           
                                         <div class="card1" id="1">
                                           <div class="card-header1">
-                                            <h5>Apa hal yang terpenting bagi anda dalam mencari pekerjaan  ?</h5>
+                                            <h5>Apa hal yang terpenting bagi anda dalam mencari pekerjaan? <i for="q1"></i></h5>
                                           </div>
                                           <div class="">
                                             <div class="mb-2">
@@ -51,7 +49,7 @@
 
                                         <div class="card1" id="2">
                                           <div class="card-header1">
-                                            <h5>ini adalah beberapa contoh deskripsi pekerjaan. Menurut anda mana yang paling cocok untuk anda ?</h5>
+                                            <h5>ini adalah beberapa contoh deskripsi pekerjaan. Menurut anda mana yang paling cocok untuk anda ?<i for="q2"></i></h5>
                                           </div>
                                           <div class="">
                                             <div class="mb-2">
@@ -75,7 +73,7 @@
 
                                         <div class="card1" id="3">
                                           <div class="card-header1">
-                                            <h5>Menurut anda, manakah dari berikut ini hal yang paling penting untuk menuju keberhasilan?</h5>
+                                            <h5>Menurut anda, manakah dari berikut ini hal yang paling penting untuk menuju keberhasilan?<i for="q3"></i></h5>
                                           </div>
                                           <div class="">
                                             <div class="mb-2">
@@ -99,7 +97,7 @@
 
                                         <div class="card1" id="4">
                                           <div class="card-header1">
-                                            <h5>Suasana Kantor seperti apa yang anda inginkan ? </h5>
+                                            <h5>Suasana Kantor seperti apa yang anda inginkan ? <i for="q4"></i></h5>
                                           </div>
                                           <div class="">
                                             <div class="mb-2">
@@ -123,7 +121,7 @@
 
                                         <div class="card1" id="5">
                                           <div class="card-header1">
-                                            <h5>Lingkungan kantor seperti apa yang anda inginkan ?</h5>
+                                            <h5>Lingkungan kantor seperti apa yang anda inginkan ?<i for="q5"></i></h5>
                                           </div>
                                           <div class="">
                                             <div class="mb-2">
@@ -152,25 +150,25 @@
 
                                   <div class="card" id="22">
                                     <div class="card-header">
-                                      <a class="card-link" data-toggle="collapse" id="dropdown2" href="#menutwo" aria-expanded="false" aria-controls="menutwo">Pekerjaan apa yang anda minat ?<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
+                                      <a class="card-link" data-toggle="collapse" id="dropdown2" aria-expanded="false" aria-controls="menutwo">Pekerjaan apa yang anda minat ?<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
                                     </div>
                                     <div id="menutwo" class="collapse">
                                       <div class="card-body">
                                         <div class="card1" id="5">
                                           <div class="card-header1">
-                                            <h5>Anda ingin bekerja pada bidang ?</h5>
+                                            <h5>Anda ingin bekerja pada bidang ?<i for="s1[]"></i></h5>
                                           </div>
                                           <div class="">
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value='Hardware Engineer' name='s1' id='checkbox1'/>
+                                              <input type='checkbox' value='Hardware Engineer' name='s1[]' id='checkbox1'/>
                                               <label for='checkbox1'>Hardware Engineer</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value='Software Engineer' name='s1'  id='checkbox2'/>
+                                              <input type='checkbox' value='Software Engineer' name='s1[]'  id='checkbox2'/>
                                               <label for='checkbox2'>Software Engineer</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value='IT Support' name='s1'  id='checkbox3'/>
+                                              <input type='checkbox' value='IT Support' name='s1[]'  id='checkbox3'/>
                                               <label for='checkbox3'>IT Support</label>
                                             </div>
                                           </div>
@@ -178,7 +176,7 @@
                                             <h5>Berapa gaji yang anda inginkan ?</h5>
                                           </div>
                                           <div class="">
-                                            <select class="select-next">
+                                            <select class="select-next" name="salary">
                                                <option value="1000000">Rp. 1.000.000</option>
                                                <option value="2000000">Rp. 2.000.000</option>
                                               <option value="3000000">Rp. 3.000.000</option>
@@ -204,7 +202,7 @@
 
                                   <div class="card" id="23">
                                     <div class="card-header">
-                                      <a class="card-link" data-toggle="collapse" id="dropdown3" href="#menu3" aria-expanded="false" aria-controls="menu3">Lulusan darimanakah anda  ?<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
+                                      <a class="card-link" data-toggle="collapse" id="dropdown3" aria-expanded="false" aria-controls="menu3">Lulusan darimanakah anda  ?<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
                                     </div>
                                     <div id="menu3" class="collapse">
                                       <div class="card-body">
@@ -212,17 +210,17 @@
                                           <div class="col-lg-12" style="margin:0px;padding: 0px;">
                                             <div class="wid50 checkboxp" style="margin:0px;padding: 0px;">
                                               <div class="card-header1">
-                                                <h5>Universitas</h5>
+                                                <h5>Universitas <i for="universitas"></i></h5>
                                               </div>
                                               <div class="input-next">
-                                                <input type="text" name="">
+                                                <input type="text" name="universitas">
                                               </div>
                                             </div>
                                             <div class="wid50 checkboxp" style="margin:0px;padding: 0px;">
                                               <div class="card-header1">
                                                 <h5>Jurusan</h5>
                                               </div>
-                                              <select class="select-next1">
+                                              <select class="select-next1" name="jurusan">
                                                 <option value="sistem komputer">Sistem Komputer</option>
                                                 <option value="teknik informatika">Teknik Informatika</option>
                                                 <option value="sistem informasi">Sistem Informasi</option>
@@ -233,19 +231,18 @@
                                                 <h5>Tahun Lulus</h5>
                                               </div>
                                               <div class="input-next">
-                                                <select id="selectElementId" class="select-next1"></select>
+                                                <select id="selectElementId" class="select-next1" name="tahun_lulus"></select>
                                               </div>
                                             </div>
                                             <div class="wid50 checkboxp" style="margin:0px;padding: 0px;">
                                               <div class="card-header1" style="margin-top:10px;">
-                                                <h5>IPK</h5>
+                                                <h5>IPK <i for="ipk"></i></h5>
                                               </div>
                                               <div class="input-next">
-                                                <input type="number" name="">
+                                                <input type="number" name="ipk" step="0.01" min="1" max="4">
                                               </div>
                                             </div>
                                           </div>
-                                          
                                         </div>
                                         <button type="button" class="button-next button3" style="margin-bottom:20px;"><span class=>Next</span></button>
                                       </div>
@@ -254,161 +251,161 @@
 
                                   <div class="card" id="24">
                                     <div class="card-header">
-                                      <a class="card-link" data-toggle="collapse" id="dropdown4" href="#menu4" aria-expanded="false" aria-controls="menu4">Dimana anda ingin bekerja ?<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
+                                      <a class="card-link" data-toggle="collapse" id="dropdown4" aria-expanded="false" aria-controls="menu4">Dimana anda ingin bekerja ?<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
                                     </div>
                                     <div id="menu4" class="collapse">
                                       <div class="card-body">
                                         <div class="card1" id="6">
                                           <div class="card-header1">
-                                            <h5>Lokasi </h5>
+                                            <h5>Lokasi <i for="s2[]"></i></h5>
                                           </div>
                                           <div class="">
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Banda Aceh" name='s2' id='checkbox4'/>
+                                              <input type='checkbox' value="Banda Aceh" name='s2[]' id='checkbox4'/>
                                               <label for='checkbox4'>Banda Aceh</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Medan" name='s2'  id='checkbox5'/>
+                                              <input type='checkbox' value="Medan" name='s2[]'  id='checkbox5'/>
                                               <label for='checkbox5'>Medan</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Padang" name='s2'  id='checkbox6'/>
+                                              <input type='checkbox' value="Padang" name='s2[]'  id='checkbox6'/>
                                               <label for='checkbox6'>Padang</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Pekanbaru" name='s2'  id='checkbox7'/>
+                                              <input type='checkbox' value="Pekanbaru" name='s2[]'  id='checkbox7'/>
                                               <label for='checkbox7'>Pekanbaru</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Jambi" name='s2'  id='checkbox8'/>
+                                              <input type='checkbox' value="Jambi" name='s2[]'  id='checkbox8'/>
                                               <label for='checkbox8'>Jambi</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Palembang" name='s2'  id='checkbox9'/>
+                                              <input type='checkbox' value="Palembang" name='s2[]'  id='checkbox9'/>
                                               <label for='checkbox9'>Palembang</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Bengkulu" name='s2'  id='checkbox10'/>
+                                              <input type='checkbox' value="Bengkulu" name='s2[]'  id='checkbox10'/>
                                               <label for='checkbox10'>Bengkulu</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Bandar Lampung" name='s2'  id='checkbox11'/>
+                                              <input type='checkbox' value="Bandar Lampung" name='s2[]'  id='checkbox11'/>
                                               <label for='checkbox11'>Bandar Lampung</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Pangkal Pinang" name='s2'  id='checkbox12'/>
+                                              <input type='checkbox' value="Pangkal Pinang" name='s2[]'  id='checkbox12'/>
                                               <label for='checkbox12'>Pangkal Pinang</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Tanjung Pinang" name='s2'  id='checkbox13'/>
+                                              <input type='checkbox' value="Tanjung Pinang" name='s2[]'  id='checkbox13'/>
                                               <label for='checkbox13'>Tanjung Pinang</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Jakarta" name='s2'  id='checkbox14'/>
+                                              <input type='checkbox' value="Jakarta" name='s2[]'  id='checkbox14'/>
                                               <label for='checkbox14'>Jakarta</label>
                                             </div>
                                              <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Tanggerang" name='s2'  id='checkbox14'/>
+                                              <input type='checkbox' value="Tanggerang" name='s2[]'  id='checkbox14'/>
                                               <label for='checkbox14'>Tanggerang</label>
                                             </div>
                                              <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Bekasi" name='s2'  id='checkbox14'/>
+                                              <input type='checkbox' value="Bekasi" name='s2[]'  id='checkbox14'/>
                                               <label for='checkbox14'>Bekasi</label>
                                             </div>
                                              <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Bogor" name='s2'  id='checkbox14'/>
+                                              <input type='checkbox' value="Bogor" name='s2[]'  id='checkbox14'/>
                                               <label for='checkbox14'>Bogor</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Bandung" name='s2'  id='checkbox15'/>
+                                              <input type='checkbox' value="Bandung" name='s2[]'  id='checkbox15'/>
                                               <label for='checkbox15'>Bandung</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Semarang" name='s2'  id='checkbox16'/>
+                                              <input type='checkbox' value="Semarang" name='s2[]'  id='checkbox16'/>
                                               <label for='checkbox16'>Semarang</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Yogyakarta" name='s2'  id='checkbox17'/>
+                                              <input type='checkbox' value="Yogyakarta" name='s2[]'  id='checkbox17'/>
                                               <label for='checkbox17'>Yogyakarta</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Surabaya" name='s2'  id='checkbox18'/>
+                                              <input type='checkbox' value="Surabaya" name='s2[]'  id='checkbox18'/>
                                               <label for='checkbox18'>Surabaya</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Serang" name='s2'  id='checkbox19'/>
+                                              <input type='checkbox' value="Serang" name='s2[]'  id='checkbox19'/>
                                               <label for='checkbox19'>Serang</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Denpasar" name='s2'  id='checkbox20'/>
+                                              <input type='checkbox' value="Denpasar" name='s2[]'  id='checkbox20'/>
                                               <label for='checkbox20'>Denpasar</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Mataram" name='s2'  id='checkbox21'/>
+                                              <input type='checkbox' value="Mataram" name='s2[]'  id='checkbox21'/>
                                               <label for='checkbox21'>Mataram</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Kupang" name='s2'  id='checkbox22'/>
+                                              <input type='checkbox' value="Kupang" name='s2[]'  id='checkbox22'/>
                                               <label for='checkbox22'>Kupang</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Pontianak" name='s2'  id='checkbox23'/>
+                                              <input type='checkbox' value="Pontianak" name='s2[]'  id='checkbox23'/>
                                               <label for='checkbox23'>Pontianak</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Palangka Raya" name='s2'  id='checkbox24'/>
+                                              <input type='checkbox' value="Palangka Raya" name='s2[]'  id='checkbox24'/>
                                               <label for='checkbox24'>Palangka Raya</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Banjarmasin" name='s2'  id='checkbox25'/>
+                                              <input type='checkbox' value="Banjarmasin" name='s2[]'  id='checkbox25'/>
                                               <label for='checkbox25'>Banjarmasin</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Samarinda" name='s2'  id='checkbox26'/>
+                                              <input type='checkbox' value="Samarinda" name='s2[]'  id='checkbox26'/>
                                               <label for='checkbox26'>Samarinda</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Tanjung Selor" name='s2'  id='checkbox27'/>
+                                              <input type='checkbox' value="Tanjung Selor" name='s2[]'  id='checkbox27'/>
                                               <label for='checkbox27'>Tanjung Selor</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Manado" name='s2'  id='checkbox28'/>
+                                              <input type='checkbox' value="Manado" name='s2[]'  id='checkbox28'/>
                                               <label for='checkbox28'>Manado</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Palu" name='s2'  id='checkbox29'/>
+                                              <input type='checkbox' value="Palu" name='s2[]'  id='checkbox29'/>
                                               <label for='checkbox29'>Palu</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Makassar" name='s2'  id='checkbox30'/>
+                                              <input type='checkbox' value="Makassar" name='s2[]'  id='checkbox30'/>
                                               <label for='checkbox30'>Makassar</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Kendari" name='s2'  id='checkbox31'/>
+                                              <input type='checkbox' value="Kendari" name='s2[]'  id='checkbox31'/>
                                               <label for='checkbox31'>Kendari</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Gorontalo" name='s2'  id='checkbox32'/>
+                                              <input type='checkbox' value="Gorontalo" name='s2[]'  id='checkbox32'/>
                                               <label for='checkbox32'>Gorontalo</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Mamuju" name='s2'  id='checkbox33'/>
+                                              <input type='checkbox' value="Mamuju" name='s2[]'  id='checkbox33'/>
                                               <label for='checkbox33'>Mamuju</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Ambon" name='s2'  id='checkbox34'/>
+                                              <input type='checkbox' value="Ambon" name='s2[]'  id='checkbox34'/>
                                               <label for='checkbox34'>Ambon</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Sofifi" name='s2'  id='checkbox35'/>
+                                              <input type='checkbox' value="Sofifi" name='s2[]'  id='checkbox35'/>
                                               <label for='checkbox35'>Sofifi</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Jayapura" name='s2'  id='checkbox36'/>
+                                              <input type='checkbox' value="Jayapura" name='s2[]'  id='checkbox36'/>
                                               <label for='checkbox36'>Jayapura</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Manokwari" name='s2'  id='checkbox37'/>
+                                              <input type='checkbox' value="Manokwari" name='s2[]'  id='checkbox37'/>
                                               <label for='checkbox37'>Manokwari</label>
                                             </div>
 
@@ -422,98 +419,98 @@
 
                                   <div class="card" id="25">
                                     <div class="card-header">
-                                      <a class="card-link" data-toggle="collapse" id="dropdown5" href="#menu5" aria-expanded="false" aria-controls="menu5">Skils apa yang anda miliki ?<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
+                                      <a class="card-link" data-toggle="collapse" id="dropdown5" aria-expanded="false" aria-controls="menu5">Skils apa yang anda miliki ?<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
                                     </div>
                                     <div id="menu5" class="collapse">
                                       <div class="card-body">
                                         <div class="card1" id="5">
                                           <div class="card-header1">
-                                            <h5>Bahasa </h5>
+                                            <h5>Bahasa <i for="s3[]"></i></h5>
                                           </div>
                                           <div class="">
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value='English' name='s3' id='checkbox38'/>
+                                              <input type='checkbox' value='English' name='s3[]' id='checkbox38'/>
                                               <label for='checkbox38'>English</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value='Indonesian' name='s3'  id='checkbox39'/>
+                                              <input type='checkbox' value='Indonesian' name='s3[]'  id='checkbox39'/>
                                               <label for='checkbox39'>Indonesian</label>
                                             </div>
                                           </div>
                                           <div class="card-header1" style="margin-top: 10px;">
-                                            <h5>Bahasa Pemograman ?</h5>
+                                            <h5>Bahasa Pemograman <i for="s5[]"></i></h5>
                                           </div>
                                           <div class="">
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value='C' name='s5' id='checkbox41'/>
+                                              <input type='checkbox' value='C' name='s5[]' id='checkbox41'/>
                                               <label for='checkbox41'>C</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value='C++' name='s5'  id='checkbox42'/>
+                                              <input type='checkbox' value='C++' name='s5[]'  id='checkbox42'/>
                                               <label for='checkbox42'>C++</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value='Java' name='s5'  id='checkbox43'/>
+                                              <input type='checkbox' value='Java' name='s5[]'  id='checkbox43'/>
                                               <label for='checkbox43'>Java</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value='PHP, HTML, CSS' name='s5'  id='checkbox44'/>
+                                              <input type='checkbox' value='PHP, HTML, CSS' name='s5[]'  id='checkbox44'/>
                                               <label for='checkbox44'>PHP, HTML, CSS</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value='Objective-C' name='s5'  id='checkbox45'/>
+                                              <input type='checkbox' value='Objective-C' name='s5[]'  id='checkbox45'/>
                                               <label for='checkbox45'>Objective-C</label>
                                             </div>
                                           </div>
 
                                           <div class="card-header1" style="margin-top: 10px;">
-                                            <h5>Database</h5>
+                                            <h5>Database <i for="s8[]"></i></h5>
                                           </div>
                                           <div class="">
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value='MySQL' name='s5' id='checkbox46'/>
+                                              <input type='checkbox' value='MySQL' name='s8[]' id='checkbox46'/>
                                               <label for='checkbox46'>MySQL</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value='Oracle' name='s5'  id='checkbox47'/>
+                                              <input type='checkbox' value='Oracle' name='s8[]'  id='checkbox47'/>
                                               <label for='checkbox47'>Oracle</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value='PostgreSQL' name='s5'  id='checkbox48'/>
+                                              <input type='checkbox' value='PostgreSQL' name='s8[]'  id='checkbox48'/>
                                               <label for='checkbox48'>PostgreSQL</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value='Cassandra' name='s5'  id='checkbox49'/>
+                                              <input type='checkbox' value='Cassandra' name='s8[]'  id='checkbox49'/>
                                               <label for='checkbox49'>Cassandra</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value='SQL Server' name='s5'  id='checkbox50'/>
+                                              <input type='checkbox' value='SQL Server' name='s8[]'  id='checkbox50'/>
                                               <label for='checkbox50'>SQL Server</label>
                                             </div>
                                           </div>
 
                                           <div class="card-header1" style="margin-top: 10px;">
-                                            <h5>Framework</h5>
+                                            <h5>Framework <i for="s9[]"></i></h5>
                                           </div>
                                           <div class="">
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value='Android' name='s5' id='checkbox51'/>
+                                              <input type='checkbox' value='Android' name='s9[]' id='checkbox51'/>
                                               <label for='checkbox51'>Android</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value='Angular' name='s5'  id='checkbox52'/>
+                                              <input type='checkbox' value='Angular' name='s9[]'  id='checkbox52'/>
                                               <label for='checkbox52'>Angular</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value='Spring' name='s5'  id='checkbox53'/>
+                                              <input type='checkbox' value='Spring' name='s9[]'  id='checkbox53'/>
                                               <label for='checkbox53'>Spring</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value='CodeIgniter' name='s5'  id='checkbox54'/>
+                                              <input type='checkbox' value='CodeIgniter' name='s9[]'  id='checkbox54'/>
                                               <label for='checkbox54'>CodeIgniter</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value='React' name='s5'  id='checkbox55'/>
+                                              <input type='checkbox' value='React' name='s9[]'  id='checkbox55'/>
                                               <label for='checkbox55'>React</label>
                                             </div>
                                           </div>
@@ -526,7 +523,7 @@
 
                                   <div class="card" id="26">
                                     <div class="card-header">
-                                      <a class="card-link" data-toggle="collapse" id="dropdown6" href="#menu6" aria-expanded="false" aria-controls="menu6">Apakah anda memiliki pengalaman pekerjaan ?<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
+                                      <a class="card-link" data-toggle="collapse" id="dropdown6" aria-expanded="false" aria-controls="menu6">Apakah anda memiliki pengalaman pekerjaan ?<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
                                     </div>
                                     <div id="menu6" class="collapse">
                                       <div id="dynamic_field">
@@ -535,17 +532,17 @@
                                             <div class="col-lg-12" style="margin:0px;padding: 0px;">
                                               <div class="wid50 checkboxp" style="margin:0px;padding: 0px;">
                                                 <div class="card-header1">
-                                                  <h5>Nama Perusahaan</h5>
+                                                  <h5>Nama Perusahaan <i for="nama_perusahaan[]"></i></h5>
                                                 </div>
                                                 <div class="input-next">
-                                                  <input type="text" name="">
+                                                  <input type="text" name="nama_perusahaan[]">
                                                 </div>
                                               </div>
                                               <div class="wid50 checkboxp" style="margin:0px;padding: 0px;">
                                                 <div class="card-header1">
                                                   <h5>Jenis Pekerjaan</h5>
                                                 </div>
-                                                <select class="select-next1">
+                                                <select class="select-next1" name="pekerjaan_experience[]">
                                                   <option value="sistem komputer">Sistem Komputer</option>
                                                   <option value="teknik informatika">Teknik Informatika</option>
                                                   <option value="sistem informasi">Sistem Informasi</option>
@@ -553,10 +550,10 @@
                                               </div>
                                               <div class="wid50 checkboxp" style="margin:0px;padding: 0px;">
                                                 <div class="card-header1" style="margin-top:10px;">
-                                                  <h5>Lamanya Bekerja</h5>
+                                                  <h5>Lamanya Bekerja <i for="lamanya_berkerja[]"></i></h5>
                                                 </div>
                                                 <div class="input-next">
-                                                  <input type="text" name="">
+                                                  <input type="text" name="lamanya_berkerja[]">
                                                 </div>
                                               </div>
                                             </div>
@@ -568,7 +565,7 @@
                                             <button type="button" class="button-next100" id="add" style="margin-bottom: 20px;">Add Experience</button>
                                           </div>
                                           
-                                          <button type="Submit" class="button-next" style="margin-bottom:20px;"><span >Finish</span></button>
+                                          <button type="submit" class="button-next button6" style="margin-bottom:20px;"><span >Finish</span></button>
                                         </div>
 
                                     </div>
@@ -582,8 +579,7 @@
                     </div>
               </section>
             </div>     
-          </div>
-          
+          </div> 
         </div>
       </div>
 
@@ -607,14 +603,13 @@
   <script src="<?= base_url()?>assets/js/jquery.animateNumber.min.js"></script>
   <script src="<?= base_url()?>assets/js/bootstrap-datepicker.js"></script>
   <script src="<?= base_url()?>assets/js/scrollax.min.js"></script>
+  <script src="<?= base_url()?>assets/js/jquery.validate.js"></script>
   <script src="<?= base_url()?>assets/js/main.js"></script>
     
   </body>
 </html>
-
 <script type="text/javascript">
-
-    var min = 2010,
+  var min = 2010,
     max = 2100,
     select = document.getElementById('selectElementId');
 
@@ -624,52 +619,155 @@
        opt.innerHTML = i;
        select.appendChild(opt);
     }
+</script>
+<script type="text/javascript">
 
+    $(document).ready(function() {
+
+      $('#mylove').validate({ // initialize the plugin
+        errorPlacement: function(error, element) {
+          // Append error within linked label
+          $( element )
+            .closest( "form" )
+              .find( "i[for='" + element.attr( "name" ) + "']" )
+                .append( error );
+        },
+        errorElement: "span",
+        rules: {
+            'q1': {
+                required: true
+            },'q2': {
+                required: true
+            },'q3': {
+                required: true
+            },'q4': {
+                required: true
+            },'q5': {
+                required: true
+            },'s1[]': {
+                required: true
+            },'universitas': {
+                required: true
+            },'ipk': {
+                required: true
+            },'s2[]': {
+                required: true
+            },'s3[]': {
+                required: true
+            },'s5[]': {
+                required: true
+            },'s8[]': {
+                required: true
+            },'s9[]': {
+                required: true
+            },'nama_perusahaan[]': {
+                required: true
+            },'lamanya_berkerja[]': {
+                required: true
+            }
+            
+        },
+        messages: {
+            'q1': {
+                required: "(You must check at least 1 box)"
+            },
+            'q2': {
+                required: "(You must check at least 1 box)"
+            },
+            'q3': {
+                required: "(You must check at least 1 box)"
+            },
+            'q4': {
+                required: "(You must check at least 1 box)"
+            },
+            'q5': {
+                required: "(You must check at least 1 box)"
+            },
+            's1[]': {
+                required: "(You must check at least 1 box)"
+            },
+            'universitas': {
+                required: "(Required)"
+            },
+            'ipk': {
+                required: "(Required)"
+            },
+            's2[]': {
+                required: "(You must check at least 1 box)"
+            },
+            's3[]': {
+                required: "(You must check at least 1 box)"
+            },
+            's5[]': {
+                required: "(You must check at least 1 box)"
+            },
+            's8[]': {
+                required: "(You must check at least 1 box)"
+            },
+            's9[]': {
+                required: "(You must check at least 1 box)"
+            },
+            'nama_perusahaan[]': {
+                required: "(You must check at least 1 box)"
+            },
+            'lamanya_berkerja[]': {
+                required: "(You must check at least 1 box)"
+            }
+        },
+    });
 
   $(".button1").click(function() {
+    if($("#mylove").valid()){
 
       $("#dropdown1").attr("aria-expanded","false");
       $("#menuone").toggleClass("show");
+      $("#dropdown2").attr("href","#menutwo");
       $("#dropdown2").attr("aria-expanded","true");
       $("#menutwo").toggleClass("show");
-      
-    });
+    }
+  });  
 
   $(".button2").click(function() {
-
+    if($("#mylove").valid()){
       $("#dropdown2").attr("aria-expanded","false");
       $("#menutwo").toggleClass("show");
+      $("#dropdown3").attr("href","#menu3");
       $("#dropdown3").attr("aria-expanded","true");
       $("#menu3").toggleClass("show");
-      
-    });
-
+    }      
+  });
+  
   $(".button3").click(function() {
-
+    if($("#mylove").valid()){
       $("#dropdown3").attr("aria-expanded","false");
       $("#menu3").toggleClass("show");
+      $("#dropdown4").attr("href","#menu4");
       $("#dropdown4").attr("aria-expanded","true");
       $("#menu4").toggleClass("show");
-      
+    }
   });
   $(".button4").click(function() {
-
+    if($("#mylove").valid()){
       $("#dropdown4").attr("aria-expanded","false");
       $("#menu4").toggleClass("show");
+      $("#dropdown5").attr("href","#menu5");
       $("#dropdown5").attr("aria-expanded","true");
       $("#menu5").toggleClass("show");
-      
+    }  
   });
   $(".button5").click(function() {
-
+    if($("#mylove").valid()){
       $("#dropdown5").attr("aria-expanded","false");
       $("#menu5").toggleClass("show");
+      $("#dropdown6").attr("href","#menu6");
       $("#dropdown6").attr("aria-expanded","true");
       $("#menu6").toggleClass("show");
+    }
   });
-
-
-
+  $(".button6").click(function() {
+    $("#mylove").valid()
+  });
+});
 </script>
 
 <script>
@@ -677,7 +775,7 @@
   var i=1;
   $('#add').click(function(){
     i++;
-    $('#dynamic_field').append('<div class="card-body" id="row'+i+'"><div class="card1" id="6"><div class="col-lg-12" style="margin:0px;padding: 0px;"><div class="wid50 checkboxp" style="margin:0px;padding: 0px;"><div class="card-header1"><h5>Nama Perusahaan</h5></div><div class="input-next"><input type="text" name=""></div></div><div class="wid50 checkboxp" style="margin-left:5px;padding: 0px;"><div class="card-header1"><h5>Jenis Pekerjaan</h5> </div><select class="select-next1"><option value="sistem komputer">Sistem Komputer</option><option value="teknik informatika">Teknik Informatika</option><option value="sistem informasi">Sistem Informasi</option></select></div><div class="wid50 checkboxp" style="margin:0px;padding: 0px;"><div class="card-header1" style="margin-top:10px;"><h5>Lamanya Bekerja</h5></div><div class="input-next"><input type="text" name=""></div></div></div><button type="button" id="'+i+'" class="close-container btn_remove"><i class="fa fa-window-close"></i></button></div></div>');
+    $('#dynamic_field').append('<div class="card-body" id="row'+i+'"><div class="card1" id="6"><div class="col-lg-12" style="margin:0px;padding: 0px;"><div class="wid50 checkboxp" style="margin:0px;padding: 0px;"><div class="card-header1"><h5>Nama Perusahaan <i for="nama_perusahaan[]"></i></h5></div><div class="input-next"><input type="text" name="nama_perusahaan[]"></div></div><div class="wid50 checkboxp" style="margin-left:5px;padding: 0px;"><div class="card-header1"><h5>Jenis Pekerjaan</h5> </div><select class="select-next1" name="jenis_pekerjaan[]"><option value="sistem komputer">Sistem Komputer</option><option value="teknik informatika">Teknik Informatika</option><option value="sistem informasi">Sistem Informasi</option></select></div><div class="wid50 checkboxp" style="margin:0px;padding: 0px;"><div class="card-header1" style="margin-top:10px;"><h5>Lamanya Bekerja <i for="lamanya_berkerja[]"></i></h5></div><div class="input-next"><input type="text" name="lamanya_berkerja[]"></div></div></div><button type="button" id="'+i+'" class="close-container btn_remove"><i class="fa fa-window-close"></i></button></div></div>');
   });
 
   $(document).on('click', '.btn_remove', function(){
@@ -694,7 +792,7 @@
         <script type="text/javascript">
                 $.toast({
                     heading: 'Success',
-                    text: "Register Success",
+                    text: "Profile telah disimpan",
                     showHideTransition: 'slide',
                     icon: 'info',
                     loader: true,        // Change it to false to disable loader
@@ -707,6 +805,8 @@
 <?php endif;?>
 
 <style type="text/css">
+  span.error { color: red; }
+
   .card1 {
     width: 100%;
     float: left;
@@ -897,7 +997,7 @@ input[type]:checked + label {
 }
 
 .select-next1{
-  padding: 13px;
+  padding: 8px;
   cursor: pointer;
   background: #fff;
   -webkit-box-shadow: none;
