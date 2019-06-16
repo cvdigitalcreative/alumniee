@@ -10,7 +10,7 @@
                             <div class="row">
                               <div class="col-md-12">
                                 
-                                <form action="" method="post" id="mylove">
+                                <form action="<?= base_url()?>Company/saveCampaign" method="post" id="mylove">
                                   <div class="card" id="21">
                                     <div class="card-header">
                                       <a class="card-link d-active" data-toggle="collapse" id="dropdown1" href="#menuone" aria-expanded="true" aria-controls="menuone"><div class="top-number">1</div>Role<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
@@ -21,167 +21,167 @@
                                           
                                         <div class="card1" id="1" >
                                           <div class="card-header1">
-                                            <h6>Nama Pekerjaan <i for="title"></i></h6>
+                                            <h6>Nama Pekerjaan <i for="nama_pekerjaan"></i></h6>
                                           </div>
                                           <div class="input-next mb-2">
-                                            <input type="text" name="title">
+                                            <input type="text" name="nama_pekerjaan">
                                           </div>
                                           <div class="card-header1 mt-3" >
                                             
-                                            <h6>Jenis Pekerjaan <i for="sc1"></i></h6>
+                                            <h6>Jenis Pekerjaan <i for="sc1[]"></i></h6>
                                           </div>
                                           <div id="job">
                                             <div class="checkboxp">
-                                              <input type='checkbox' value='Hardware Engineer' name='sc1' id='checkbox1'/>
+                                              <input type='checkbox' value='Hardware Engineer' name='sc1[]' id='checkbox1'/>
                                               <label for='checkbox1'>Hardware Engineer</label>
                                             </div>
                                             <div class="checkboxp">
-                                              <input type='checkbox' value='Software Engineer' name='sc1'  id='checkbox2'/>
+                                              <input type='checkbox' value='Software Engineer' name='sc1[]'  id='checkbox2'/>
                                               <label for='checkbox2'>Software Engineer</label>
                                             </div>
                                             <div class="checkboxp">
-                                              <input type='checkbox' value='IT Support' name='sc1'  id='checkbox3'/>
+                                              <input type='checkbox' value='IT Support' name='sc1[]'  id='checkbox3'/>
                                               <label for='checkbox3'>IT Support</label>
                                             </div>
                                           </div>
                                           <div class="card-header1 mt-3">
-                                            <h6>Lokasi <i for="sc2"></i></h6>
+                                            <h6>Lokasi <i for="sc2[]"></i></h6>
                                           </div>
                                           <div class="">
                                             <div class="checkboxp">
-                                              <input type='checkbox' value="Banda Aceh" name='sc2' id='checkbox4'/>
+                                              <input type='checkbox' value="Banda Aceh" name='sc2[]' id='checkbox4'/>
                                               <label for='checkbox4'>Banda Aceh</label>
                                             </div>
                                             <div class=" checkboxp">
-                                              <input type='checkbox' value="Medan" name='sc2'  id='checkbox5'/>
+                                              <input type='checkbox' value="Medan" name='sc2[]'  id='checkbox5'/>
                                               <label for='checkbox5'>Medan</label>
                                             </div>
                                             <div class=" checkboxp">
-                                              <input type='checkbox' value="Padang" name='sc2'  id='checkbox6'/>
+                                              <input type='checkbox' value="Padang" name='sc2[]'  id='checkbox6'/>
                                               <label for='checkbox6'>Padang</label>
                                             </div>
                                             <div class=" checkboxp">
-                                              <input type='checkbox' value="Pekanbaru" name='sc2'  id='checkbox7'/>
+                                              <input type='checkbox' value="Pekanbaru" name='sc2[]'  id='checkbox7'/>
                                               <label for='checkbox7'>Pekanbaru</label>
                                             </div>
                                             <div class=" checkboxp">
-                                              <input type='checkbox' value="Jambi" name='sc2'  id='checkbox8'/>
+                                              <input type='checkbox' value="Jambi" name='sc2[]'  id='checkbox8'/>
                                               <label for='checkbox8'>Jambi</label>
                                             </div>
                                             <div class=" checkboxp">
-                                              <input type='checkbox' value="Palembang" name='sc2'  id='checkbox9'/>
+                                              <input type='checkbox' value="Palembang" name='sc2[]'  id='checkbox9'/>
                                               <label for='checkbox9'>Palembang</label>
                                             </div>
                                             <div class=" checkboxp">
-                                              <input type='checkbox' value="Bengkulu" name='sc2'  id='checkbox10'/>
+                                              <input type='checkbox' value="Bengkulu" name='sc2[]'  id='checkbox10'/>
                                               <label for='checkbox10'>Bengkulu</label>
                                             </div>
                                             <div class="checkboxp">
-                                              <input type='checkbox' value="Bandar Lampung" name='sc2'  id='checkbox11'/>
+                                              <input type='checkbox' value="Bandar Lampung" name='sc2[]'  id='checkbox11'/>
                                               <label for='checkbox11'>Bandar Lampung</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Pangkal Pinang" name='sc2'  id='checkbox12'/>
+                                              <input type='checkbox' value="Pangkal Pinang" name='sc2[]'  id='checkbox12'/>
                                               <label for='checkbox12'>Pangkal Pinang</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Tanjung Pinang" name='sc2'  id='checkbox13'/>
+                                              <input type='checkbox' value="Tanjung Pinang" name='sc2[]'  id='checkbox13'/>
                                               <label for='checkbox13'>Tanjung Pinang</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Jakarta" name='sc2'  id='checkbox14'/>
+                                              <input type='checkbox' value="Jakarta" name='sc2[]'  id='checkbox14'/>
                                               <label for='checkbox14'>Jakarta</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Bandung" name='sc2'  id='checkbox15'/>
+                                              <input type='checkbox' value="Bandung" name='sc2[]'  id='checkbox15'/>
                                               <label for='checkbox15'>Bandung</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Semarang" name='sc2'  id='checkbox16'/>
+                                              <input type='checkbox' value="Semarang" name='sc2[]'  id='checkbox16'/>
                                               <label for='checkbox16'>Semarang</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Yogyakarta" name='sc2'  id='checkbox17'/>
+                                              <input type='checkbox' value="Yogyakarta" name='sc2[]'  id='checkbox17'/>
                                               <label for='checkbox17'>Yogyakarta</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Surabaya" name='sc2'  id='checkbox18'/>
+                                              <input type='checkbox' value="Surabaya" name='sc2[]'  id='checkbox18'/>
                                               <label for='checkbox18'>Surabaya</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Serang" name='s2'  id='checkbox19'/>
+                                              <input type='checkbox' value="Serang" name='sc2[]'  id='checkbox19'/>
                                               <label for='checkbox19'>Serang</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Denpasar" name='sc2'  id='checkbox20'/>
+                                              <input type='checkbox' value="Denpasar" name='sc2[]'  id='checkbox20'/>
                                               <label for='checkbox20'>Denpasar</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Mataram" name='sc2'  id='checkbox21'/>
+                                              <input type='checkbox' value="Mataram" name='sc2[]'  id='checkbox21'/>
                                               <label for='checkbox21'>Mataram</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Kupang" name='sc2'  id='checkbox22'/>
+                                              <input type='checkbox' value="Kupang" name='sc2[]'  id='checkbox22'/>
                                               <label for='checkbox22'>Kupang</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Pontianak" name='sc2'  id='checkbox23'/>
+                                              <input type='checkbox' value="Pontianak" name='sc2[]'  id='checkbox23'/>
                                               <label for='checkbox23'>Pontianak</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Palangka Raya" name='sc2'  id='checkbox24'/>
+                                              <input type='checkbox' value="Palangka Raya" name='sc2[]'  id='checkbox24'/>
                                               <label for='checkbox24'>Palangka Raya</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Banjarmasin" name='sc2'  id='checkbox25'/>
+                                              <input type='checkbox' value="Banjarmasin" name='sc2[]'  id='checkbox25'/>
                                               <label for='checkbox25'>Banjarmasin</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Samarinda" name='sc2'  id='checkbox26'/>
+                                              <input type='checkbox' value="Samarinda" name='sc2[]'  id='checkbox26'/>
                                               <label for='checkbox26'>Samarinda</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Tanjung Selor" name='sc2'  id='checkbox27'/>
+                                              <input type='checkbox' value="Tanjung Selor" name='sc2[]'  id='checkbox27'/>
                                               <label for='checkbox27'>Tanjung Selor</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Manado" name='sc2'  id='checkbox28'/>
+                                              <input type='checkbox' value="Manado" name='sc2[]'  id='checkbox28'/>
                                               <label for='checkbox28'>Manado</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Palu" name='sc2'  id='checkbox29'/>
+                                              <input type='checkbox' value="Palu" name='sc2[]'  id='checkbox29'/>
                                               <label for='checkbox29'>Palu</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Makassar" name='sc2'  id='checkbox30'/>
+                                              <input type='checkbox' value="Makassar" name='sc2[]'  id='checkbox30'/>
                                               <label for='checkbox30'>Makassar</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Kendari" name='sc2'  id='checkbox31'/>
+                                              <input type='checkbox' value="Kendari" name='sc2[]'  id='checkbox31'/>
                                               <label for='checkbox31'>Kendari</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Gorontalo" name='sc2'  id='checkbox32'/>
+                                              <input type='checkbox' value="Gorontalo" name='sc2[]'  id='checkbox32'/>
                                               <label for='checkbox32'>Gorontalo</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Mamuju" name='sc2'  id='checkbox33'/>
+                                              <input type='checkbox' value="Mamuju" name='sc2[]'  id='checkbox33'/>
                                               <label for='checkbox33'>Mamuju</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Ambon" name='sc2'  id='checkbox34'/>
+                                              <input type='checkbox' value="Ambon" name='sc2[]'  id='checkbox34'/>
                                               <label for='checkbox34'>Ambon</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Sofifi" name='sc2'  id='checkbox35'/>
+                                              <input type='checkbox' value="Sofifi" name='sc2[]'  id='checkbox35'/>
                                               <label for='checkbox35'>Sofifi</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Jayapura" name='sc2'  id='checkbox36'/>
+                                              <input type='checkbox' value="Jayapura" name='sc2[]'  id='checkbox36'/>
                                               <label for='checkbox36'>Jayapura</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Manokwari" name='sc2'  id='checkbox37'/>
+                                              <input type='checkbox' value="Manokwari" name='sc2[]'  id='checkbox37'/>
                                               <label for='checkbox37'>Manokwari</label>
                                             </div>
                                           </div>
@@ -189,7 +189,7 @@
                                             <h6>Gaji</h6>
                                           </div>
                                           <div class="">
-                                            <select class="select-next1 mb-2">
+                                            <select class="select-next1 mb-2" name="salary">
                                               <option value="1000000">Rp. 1.000.000</option>
                                               <option value="2000000">Rp. 2.000.000</option>>
                                               <option value="3000000">Rp. 3.000.000</option>
@@ -209,123 +209,117 @@
                                           </div>
                                           <div class="">
                                               <div class="card-header1 mt-3">
-                                                <h6>Jurusan <i for="sc3"></i></h6>
+                                                <h6>Jurusan <i for="sc3[]"></i></h6>
                                               </div>
                                               <div class="mb-2 checkboxp">
-                                                <input type='checkbox' value='Sistem Komputer' name='sc3' id='checkbox38'/>
+                                                <input type='checkbox' value='Sistem Komputer' name='sc3[]' id='checkbox38'/>
                                                 <label for='checkbox38'>Sistem Komputer</label>
                                               </div>
                                               <div class="checkboxp">
-                                                <input type='checkbox' value='Teknik Informatika' name='sc3'  id='checkbox39'/>
+                                                <input type='checkbox' value='Teknik Informatika' name='sc3[]'  id='checkbox39'/>
                                                 <label for='checkbox39'>Teknik Informatika</label>
                                               </div>
                                               <div class="checkboxp">
-                                                <input type='checkbox' value='Sistem Informasi' name='sc3'  id='checkbox40'/>
+                                                <input type='checkbox' value='Sistem Informasi' name='sc3[]'  id='checkbox40'/>
                                                 <label for='checkbox40'>Sistem Informasi</label>
                                               </div>
                                           </div>
                                           <div class="">
                                               <div class="card-header1 mt-3">
-                                                <h6>IPK <i for="sc4"></i></h6>
+                                                <h6>Minimun IPK <i for="minimun_ipk"></i></h6>
                                               </div>
-                                              <div class="mb-2 checkboxp">
-                                                <input type='checkbox' value='1' name='sc4' id='checkbox41'/>
-                                                <label for='checkbox41'> <=3.00 </label>
-                                              </div>
-                                             
-                                              <div class="checkboxp">
-                                                <input type='checkbox' value='2' name='sc4'  id='checkbox43'/>
-                                                <label for='checkbox43'> >3.00 </label>
+                                              <div class="input-next">
+                                                <input type="number" name="minimun_ipk" step="0.01" min="2.5" max="4">
                                               </div>
                                           </div>
                                           <div class="card-header1 mt-3">
-                                            <h6>Skill:Bahasa <i for="sc5"></i></h6>
+                                            <h6>Skill:Bahasa <i for="sc5[]"></i></h6>
                                           </div>
                                           <div class="">
                                             <div class=" checkboxp">
-                                              <input type='checkbox' value='English' name='sc5' id='checkbox44'/>
+                                              <input type='checkbox' value='English' name='sc5[]' id='checkbox44'/>
                                               <label for='checkbox44'>English</label>
                                             </div>
                                             <div class=" checkboxp">
-                                              <input type='checkbox' value='Indonesian' name='sc5'  id='checkbox45'/>
+                                              <input type='checkbox' value='Indonesian' name='sc5[]'  id='checkbox45'/>
                                               <label for='checkbox45'>Indonesian</label>
                                             </div>
                                           </div>
                                           <div class="">
                                           
                                           <div class="card-header1" style="margin-top: 10px;">
-                                            <i for="sc6"></i>
-                                            <h6>Skill : Programming Language</h6>
+                                            
+                                            <h6>Skill : Programming Language <i for="sc6[]"></i></h6>
                                           </div>
                                           
                                             <div class="checkboxp">
-                                              <input type='checkbox' value='C' name='sc6' id='checkbox46'/>
+                                              <input type='checkbox' value='C' name='sc6[]' id='checkbox46'/>
                                               <label for='checkbox46'>C</label>
                                             </div>
                                             <div class="checkboxp">
-                                              <input type='checkbox' value='C++' name='sc6'  id='checkbox47'/>
+                                              <input type='checkbox' value='C++' name='sc6[]'  id='checkbox47'/>
                                               <label for='checkbox47'>C++</label>
                                             </div>
                                             <div class="checkboxp">
-                                              <input type='checkbox' value='Java' name='sc6'  id='checkbox48'/>
+                                              <input type='checkbox' value='Java' name='sc6[]'  id='checkbox48'/>
                                               <label for='checkbox48'>Java</label>
                                             </div>
                                             <div class="checkboxp">
-                                              <input type='checkbox' value='PHP, HTML, CSS' name='sc6'  id='checkbox49'/>
+                                              <input type='checkbox' value='PHP, HTML, CSS' name='sc6[]'  id='checkbox49'/>
                                               <label for='checkbox49'>PHP, HTML, CSS</label>
                                             </div>
                                             <div class="checkboxp">
-                                              <input type='checkbox' value='Objective-C' name='sc6'  id='checkbox50'/>
+                                              <input type='checkbox' value='Objective-C' name='sc6[]'  id='checkbox50'/>
                                               <label for='checkbox50'>Objective-C</label>
                                             </div>
                                             
                                             <div class="card-header1" style="margin-top: 10px;">
-                                              <h6>Skill : Database</h6>
+                                              <h6>Skill : Database <i for="sc8[]"></i></h6>
                                             </div>
                                             <div class="checkboxp">
-                                              <input type='checkbox' value='MySQL' name='sc6' id='checkbox51'/>
+                                              <input type='checkbox' value='MySQL' name='sc8[]' id='checkbox51'/>
                                               <label for='checkbox51'>MySQL</label>
                                             </div>
                                             <div class="checkboxp">
-                                              <input type='checkbox' value='Oracle' name='sc6'  id='checkbox52'/>
+                                              <input type='checkbox' value='Oracle' name='sc8[]'  id='checkbox52'/>
                                               <label for='checkbox52'>Oracle</label>
                                             </div>
                                             <div class="checkboxp">
-                                              <input type='checkbox' value='PostgreSQL' name='sc6'  id='checkbox53'/>
+                                              <input type='checkbox' value='PostgreSQL' name='sc8[]'  id='checkbox53'/>
                                               <label for='checkbox53'>PostgreSQL</label>
                                             </div>
                                             <div class="checkboxp">
-                                              <input type='checkbox' value='Cassandra' name='sc6'  id='checkbox54'/>
+                                              <input type='checkbox' value='Cassandra' name='sc8[]'  id='checkbox54'/>
                                               <label for='checkbox54'>Cassandra</label>
                                             </div>
                                             <div class="checkboxp">
-                                              <input type='checkbox' value='SQL Server' name='sc6'  id='checkbox55'/>
+                                              <input type='checkbox' value='SQL Server' name='sc8[]'  id='checkbox55'/>
                                               <label for='checkbox55'>SQL Server</label>
                                             </div>
                                           
 
                                             <div class="card-header1" style="margin-top: 10px;">
-                                              <h6>Skill : Framework</h6>
+                                              <h6>Skill : Framework <i for="sc9[]"></i></h6>
                                             </div>
                                             
                                             <div class="checkboxp">
-                                              <input type='checkbox' value='Android' name='sc6' id='checkbox56'/>
+                                              <input type='checkbox' value='Android' name='sc9[]' id='checkbox56'/>
                                               <label for='checkbox56'>Android</label>
                                             </div>
                                             <div class="checkboxp">
-                                              <input type='checkbox' value='Angular' name='sc6'  id='checkbox57'/>
+                                              <input type='checkbox' value='Angular' name='sc9[]'  id='checkbox57'/>
                                               <label for='checkbox57'>Angular</label>
                                             </div>
                                             <div class="checkboxp">
-                                              <input type='checkbox' value='Spring' name='sc6'  id='checkbox58'/>
+                                              <input type='checkbox' value='Spring' name='sc9[]'  id='checkbox58'/>
                                               <label for='checkbox58'>Spring</label>
                                             </div>
                                             <div class="checkboxp">
-                                              <input type='checkbox' value='CodeIgniter' name='sc6'  id='checkbox59'/>
+                                              <input type='checkbox' value='CodeIgniter' name='sc9[]'  id='checkbox59'/>
                                               <label for='checkbox59'>CodeIgniter</label>
                                             </div>
                                             <div class="checkboxp">
-                                              <input type='checkbox' value='React' name='sc6'  id='checkbox60'/>
+                                              <input type='checkbox' value='React' name='sc9[]'  id='checkbox60'/>
                                               <label for='checkbox60'>React</label>
                                             </div>
                                           </div>
@@ -354,13 +348,13 @@
                                             <h6>Deskripsi Perusahaan</h6>
                                           </div>
                                           <div>
-                                            <textarea id="demo-editor-bootstrap" name="companyd"></textarea>
+                                            <textarea id="demo-editor-bootstrap" name="companyd" rows="7"></textarea>
                                           </div>
                                           <div class="card-header1 mt-3" >
                                             <h6>Deskripsi Pekerjaan</h6>
                                           </div>
                                           <div>
-                                            <textarea id="demo-editor-bootstrap1" name="Roled"></textarea>
+                                            <textarea id="demo-editor-bootstrap1" name="roledc" rows="7"></textarea>
                                           </div>
                                           
                                           
@@ -390,7 +384,7 @@
                                         </div>
                                         </div>
                                         <div>
-                                          <button type="button" class="button-next100" id="add" style="margin-bottom: 20px;">Add Experience</button>
+                                          <button type="button" class="button-next100" id="add" style="margin-bottom: 20px;">Tambah Pertanyaan</button>
                                         </div>
                                           
                                         <button type="button" class="button-next button3" style="margin-bottom:20px;"><span class=>Next</span></button>
@@ -457,9 +451,9 @@
   <script src="<?= base_url()?>assets/js/bootstrap-datepicker.js"></script>
   <script src="<?= base_url()?>assets/js/scrollax.min.js"></script>
   <script src="<?= base_url()?>assets/js/main.js"></script>
-  <script src="<?= base_url()?>assets/js/editor.js"></script>
+  <!-- <script src="<?= base_url()?>assets/js/bootstrap3-wysihtml5.all.min.js"></script> -->
   <script src="<?= base_url()?>assets/js/jquery.validate.js"></script>
-  <link type="text/css" href="<?= base_url()?>assets/css/editor.css" rel="stylesheet"/>
+  <!-- <link type="text/css" href="<?= base_url()?>assets/css/bootstrap3-wysihtml5.min.css" rel="stylesheet"/> -->
   </body>
 </html>
 <script>
@@ -467,7 +461,7 @@
   var i=1;
   $('#add').click(function(){
     i++;
-    $('#dynamic_field').append('<div id="row'+i+'"><div class="card-header1"><h6 style="display:inline-block;">Questions '+i+' <i for="ques[]"></i></h6><button type="button" id="'+i+'" class="close-container1 btn_remove"><i class="fa fa-window-close"></i></button></div><div class="input-next mb-2"><input type="text" name="title"></div></div>  ');
+    $('#dynamic_field').append('<div id="row'+i+'"><div class="card-header1"><h6 style="display:inline-block;">Pertanyaan<i for="ques[]"></i></h6><button type="button" id="'+i+'" class="close-container1 btn_remove"><i class="fa fa-window-close"></i></button></div><div class="input-next mb-2"><input type="text" name="ques[]"></div></div>  ');
   });
 
   $(document).on('click', '.btn_remove', function(){
@@ -490,19 +484,23 @@
         },
         errorElement: "span",
         rules: {
-            'title': {
+            'nama_pekerjaan': {
                 required: true
-            },'sc1': {
+            },'sc1[]': {
                 required: true
-            },'sc2': {
+            },'sc2[]': {
                 required: true
-            },'sc3': {
+            },'sc3[]': {
                 required: true
-            },'sc4': {
+            },'minimun_ipk': {
                 required: true
-            },'sc5': {
+            },'sc5[]': {
                 required: true
-            },'sc6': {
+            },'sc6[]': {
+                required: true
+            },'sc8[]': {
+                required: true
+            },'sc9[]': {
                 required: true
             },'url': {
                 required: true
@@ -513,25 +511,33 @@
             
         },
         messages: {
-            'title': {
+            'nama_pekerjaan': {
                 required: "(Wajib Diisi)"
             },
-            'sc1': {
+            'sc1[]': {
                 required: "(Minimal Pilih  Satu)"
             },
-            'sc2': {
+            'sc2[]': {
                 required: "(Minimal Pilih  Satu)"
             },
-            'sc3': {
+            'sc3[]': {
                 required: "(Minimal Pilih  Satu)"
             },
-            'sc4': {
+            'minimun_ipk': {
+                required: "(Required)",
+                min: "(IPK tidak bisa kurang dari satu)",
+                max: "(IPK tidak bisa lebih dari 4)"
+            },
+            'sc5[]': {
                 required: "(Minimal Pilih  Satu)"
             },
-            'sc5': {
+            'sc6[]': {
                 required: "(Minimal Pilih  Satu)"
             },
-            'sc6': {
+            'sc8[]': {
+                required: "(Minimal Pilih  Satu)"
+            },
+            'sc9[]': {
                 required: "(Minimal Pilih  Satu)"
             },
             'url': {
@@ -583,8 +589,10 @@
 
 <script>
         $(document).ready(function() {
-        $("#demo-editor-bootstrap").Editor();
-        $("#demo-editor-bootstrap1").Editor();
+        $("#demo-editor-bootstrap").wysihtml5({
+
+        });
+        // $("#demo-editor-bootstrap1").wysihtml5();
 });
 </script>
 
@@ -609,6 +617,10 @@
 <style type="text/css">
   a{
     color: #000;
+  }
+
+  textarea{
+    width: 100%;
   }
 
   .card1 {
