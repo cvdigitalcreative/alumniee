@@ -403,7 +403,7 @@
 
                                   <div class="card" id="24">
                                     <div class="card-header">
-                                      <a class="card-link" data-toggle="collapse" id="dropdown4" aria-expanded="false" aria-controls="men46"><div class="top-number">4</div>Campaign Detail<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
+                                      <a class="card-link" data-toggle="collapse" id="dropdown4" href="#menu4" aria-expanded="false" aria-controls="men46"><div class="top-number">4</div>Campaign Detail<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
                                     </div>
                                     <div id="menu4" class="collapse">
                                       
