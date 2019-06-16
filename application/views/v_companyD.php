@@ -21,14 +21,14 @@
                                           
                                         <div class="card1" id="1" >
                                           <div class="card-header1">
-                                            <h6>Title <i for="title"></i></h6>
+                                            <h6>Nama Pekerjaan <i for="title"></i></h6>
                                           </div>
                                           <div class="input-next mb-2">
                                             <input type="text" name="title">
                                           </div>
                                           <div class="card-header1 mt-3" >
                                             
-                                            <h6>Job Function <i for="sc1"></i></h6>
+                                            <h6>Jenis Pekerjaan <i for="sc1"></i></h6>
                                           </div>
                                           <div id="job">
                                             <div class="checkboxp">
@@ -45,7 +45,7 @@
                                             </div>
                                           </div>
                                           <div class="card-header1 mt-3">
-                                            <h6>Location <i for="sc2"></i></h6>
+                                            <h6>Lokasi <i for="sc2"></i></h6>
                                           </div>
                                           <div class="">
                                             <div class="checkboxp">
@@ -186,12 +186,12 @@
                                             </div>
                                           </div>
                                           <div class="card-header1 mt-3">
-                                            <h6>Salary</h6>
+                                            <h6>Gaji</h6>
                                           </div>
                                           <div class="">
                                             <select class="select-next1 mb-2">
-                                              <option value="3000000">Rp. 1.000.000</option>
-                                              <option value="3000000">Rp. 2.000.000</option>>
+                                              <option value="1000000">Rp. 1.000.000</option>
+                                              <option value="2000000">Rp. 2.000.000</option>>
                                               <option value="3000000">Rp. 3.000.000</option>
                                               <option value="4000000">Rp. 4.000.000</option>
                                               <option value="5000000">Rp. 5.000.000</option>
@@ -230,19 +230,16 @@
                                               </div>
                                               <div class="mb-2 checkboxp">
                                                 <input type='checkbox' value='1' name='sc4' id='checkbox41'/>
-                                                <label for='checkbox41'><3.00</label>
+                                                <label for='checkbox41'> <=3.00 </label>
                                               </div>
+                                             
                                               <div class="checkboxp">
-                                                <input type='checkbox' value='2' name='sc4'  id='checkbox42'/>
-                                                <label for='checkbox42'>=3.00</label>
-                                              </div>
-                                              <div class="checkboxp">
-                                                <input type='checkbox' value='3' name='sc4'  id='checkbox43'/>
-                                                <label for='checkbox43'>>3.00</label>
+                                                <input type='checkbox' value='2' name='sc4'  id='checkbox43'/>
+                                                <label for='checkbox43'> >3.00 </label>
                                               </div>
                                           </div>
                                           <div class="card-header1 mt-3">
-                                            <h6>Language <i for="sc5"></i></h6>
+                                            <h6>Skill:Bahasa <i for="sc5"></i></h6>
                                           </div>
                                           <div class="">
                                             <div class=" checkboxp">
@@ -341,26 +338,26 @@
 
                                   <div class="card" id="22">
                                     <div class="card-header">
-                                      <a class="card-link" data-toggle="collapse" id="dropdown2" aria-expanded="false" aria-controls="menutwo"><div class="top-number">2</div>Role & Company Description<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
+                                      <a class="card-link" data-toggle="collapse" id="dropdown2" aria-expanded="false" aria-controls="menutwo"><div class="top-number">2</div>Role & Deskripsi Perusahaan<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
                                     </div>
                                     <div id="menutwo" class="collapse">
                                       <div class="card-body">
                                         <div class="card1" id="5">
                                           <div class="card-header1">
-                                            <h6>Company URL <i for="url"></i></h6>
+                                            <h6>Website Perusahaan <i for="url"></i></h6>
                                           </div>
                                           <div class="input-next mb-2">
                                             <input type="text" name="url">
-                                            <h6><i>This is a link a candidate can click on to find out more about your company</i></h6>
+                                            <h6><i>Website ini digunakan untuk talent melihat informasi perusahaan</i></h6>
                                           </div>
                                           <div class="card-header1 mt-3" >
-                                            <h6>Company Description</h6>
+                                            <h6>Deskripsi Perusahaan</h6>
                                           </div>
                                           <div>
                                             <textarea id="demo-editor-bootstrap" name="companyd"></textarea>
                                           </div>
                                           <div class="card-header1 mt-3" >
-                                            <h6>Role Description</h6>
+                                            <h6>Deskripsi Pekerjaan</h6>
                                           </div>
                                           <div>
                                             <textarea id="demo-editor-bootstrap1" name="Roled"></textarea>
@@ -375,7 +372,7 @@
 
                                   <div class="card" id="23">
                                     <div class="card-header">
-                                      <a class="card-link" data-toggle="collapse" id="dropdown3" aria-expanded="false" aria-controls="menu3"><div class="top-number">3</div>Application questions<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
+                                      <a class="card-link" data-toggle="collapse" id="dropdown3" aria-expanded="false" aria-controls="menu3"><div class="top-number">3</div>Pertanyaan untuk talent ?<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
                                     </div>
                                     <div id="menu3" class="collapse">
                                       <div class="card-body">
@@ -383,7 +380,7 @@
                                           <div id="dynamic_field">
                                             <div>
                                               <div class="card-header1">
-                                                <h6>Questions 1<i for="ques[]"></i></h6>
+                                                <h6>Pertanyaan<i for="ques[]"></i></h6>
                                               </div>
                                               <div class="input-next mb-2">
                                                 <input type="text" name="ques[]">
@@ -403,7 +400,7 @@
 
                                   <div class="card" id="24">
                                     <div class="card-header">
-                                      <a class="card-link" data-toggle="collapse" id="dropdown4" href="#menu4" aria-expanded="false" aria-controls="men46"><div class="top-number">4</div>Campaign Detail<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
+                                      <a class="card-link" data-toggle="collapse" id="dropdown4" href="#menu4" aria-expanded="false" aria-controls="men46"><div class="top-number">4</div>Syarat dan Ketentuan <span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
                                     </div>
                                     <div id="menu4" class="collapse">
                                       
@@ -411,7 +408,7 @@
                                           <div class="card1" id="4">
                                             
                                             <div class="input-next mb-2">
-                                              <h6><i>dadanafnafnalfwalkfnawnflkawn</i></h6>
+                                              <h6><i>Setiap talent yang direkrut perusahaan wajib membayar biaya 10% dari total 6 bulan gaji talent tanpa memotong gaji talent</i></h6>
                                             </div>
                                             </div>
                                           </div>
@@ -517,31 +514,31 @@
         },
         messages: {
             'title': {
-                required: "(Required)"
+                required: "(Wajib Diisi)"
             },
             'sc1': {
-                required: "(You must check at least 1 box)"
+                required: "(Minimal Pilih  Satu)"
             },
             'sc2': {
-                required: "(You must check at least 1 box)"
+                required: "(Minimal Pilih  Satu)"
             },
             'sc3': {
-                required: "(You must check at least 1 box)"
+                required: "(Minimal Pilih  Satu)"
             },
             'sc4': {
-                required: "(You must check at least 1 box)"
+                required: "(Minimal Pilih  Satu)"
             },
             'sc5': {
-                required: "(You must check at least 1 box)"
+                required: "(Minimal Pilih  Satu)"
             },
             'sc6': {
-                required: "(You must check at least 1 box)"
+                required: "(Minimal Pilih  Satu)"
             },
             'url': {
-                required: "(Required)"
+                required: "(Wajib Diisi)"
             },
             'ques[]': {
-                required: "(Required)"
+                required: "(Wajib Diisi)"
             }
         },
     });
