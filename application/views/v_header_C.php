@@ -31,7 +31,7 @@
         <div class="topnav">
           <div class="fr" style="margin: 10px 10px 10px 0;">
               <a href="<?=base_url()?>Login/Logout" style="border: 2px solid #4fa4e2 !important;
-            border-radius: 25px !important;"><i><?= $this->session->userdata('nama')?></i>, <b>Log Out</b> <span class="fa fa-sign-out-alt"></span></a>
+            border-radius: 25px !important;"><i><?= $this->session->userdata('nama')?></i><?= $this->session->userdata('id')?>, <b>Log Out</b> <span class="fa fa-sign-out-alt"></span></a>
           </div>
           <div style="display: flex;"> 
                 <div style="margin: 10px 0 5px 5px;">

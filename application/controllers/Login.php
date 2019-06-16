@@ -34,7 +34,7 @@ class Login extends CI_Controller{
             $this->session->set_userdata('user',$email);
             $xcCompany=$cCompany->row_array();
             $this->session->set_userdata('akses','2');
-            $id=$xcCompany['talent_id'];
+            $id=$xcCompany['company_id'];
             $nama=$xcCompany['nama'];
             $email = $xcCompany['email'];
             $this->session->set_userdata('email',$email);

@@ -95,7 +95,7 @@
                     icon: 'info',
                     loader: true,        // Change it to false to disable loader
                     loaderBg: '#ffffff',
-                    position: 'top-right',
+                    position: 'bottom-right',
                     bgColor: '#7EC857'
                 });
         </script>
