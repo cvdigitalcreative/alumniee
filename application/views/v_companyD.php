@@ -403,23 +403,23 @@
 
                                   <div class="card" id="24">
                                     <div class="card-header">
-                                      <a class="card-link" data-toggle="collapse" id="dropdown4" href="#menu4" aria-expanded="false" aria-controls="men46"><div class="top-number">4</div>Campaign Detail<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
+                                      <a class="card-link" data-toggle="collapse" id="dropdown4" aria-expanded="false" aria-controls="men46"><div class="top-number">4</div>Campaign Detail<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
                                     </div>
                                     <div id="menu4" class="collapse">
                                       
                                         <div class="card-body">
                                           <div class="card1" id="4">
-                                            
                                             <div class="input-next mb-2">
                                               <h6><i>dadanafnafnalfwalkfnawnflkawn</i></h6>
                                             </div>
-                                            </div>
+                                          </div>
+                                          <div class="card-body">
+                                            <button type="Submit" class="button-next" style="margin-bottom:20px;"><span >Finish</span></button>
                                           </div>
                                         </div>
+                                    </div>
                                    
-                                        <div class="card-body">
-                                          <button type="Submit" class="button-next" style="margin-bottom:20px;"><span >Finish</span></button>
-                                        </div>
+                                        
 
                                     </div>
                                   </div>
@@ -547,7 +547,7 @@
     });
       $(".button1").click(function() {
         if($("#mylove").valid()){
-          $("#dropdown2").attr("aria-expanded","true");
+          $("#dropdown1").attr("aria-expanded","false");
           $("#dropdown1").toggleClass("d-active");
           $("#menuone").toggleClass("show");
           $("#dropdown2").attr("href","#menutwo");
@@ -581,9 +581,6 @@
         }
       });
   });
-
-
-
 
 </script>
 
