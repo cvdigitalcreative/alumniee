@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Alumniee</title>
+    <title>Alumne</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -31,7 +31,7 @@
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Alumnee</a>
+	      <a class="navbar-brand" href="<?= base_url()?>">Alumne</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -39,7 +39,7 @@
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
 	          <li class="nav-item"><a href="<?= base_url()?>Home/Talent" class="nav-link">Talent</a></li>
-	          <li class="nav-item"><a href="<?= base_url()?>Home/Company" class="nav-link">Employers</a></li>
+	          <li class="nav-item"><a href="<?= base_url()?>Home/Company" class="nav-link">Company</a></li>
 	          <li class="nav-item cta"><a href="<?= base_url()?>Login" class="nav-link"><span>Log In</span></a></li>
 	        </ul>
 	      </div>
