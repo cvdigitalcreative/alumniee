@@ -1,20 +1,26 @@
-<div class="col-lg-12 col-md-6 mt-4 order-2">
-  <div class="row">
-          <h4>Vertical</h4>
-    </div>
-</div>
-
 <div class="col-lg-12">
 <div class="row">
   <div class="col-lg-12">
     <div class="tabs tabs-vertical tabs-left">
       <ul class="nav nav-tabs">
-        <li class="nav-item active" style="border-right: 3px;">
-            <a class="nav-link" href="#popular11" data-toggle="tab" style="color:#0088CC;">Jack</a>
+        <?php 
+        function rupiah($angka){
+          $hasil_rupiah = "Rp " . number_format($angka,0,',','.');
+          return $hasil_rupiah;
+        }
+        foreach ($data as $key => $value): ?>
+          <li class="nav-item">
+           <a class="nav-link" href="#<?= $value['talent_id']?>" data-toggle="tab" style="color:#0088CC;">
+            <div>
+              <p class="head no-margin"><?= $value['nama']?></p>
+              <p class="no-margin">Gaji Diminta : <?= rupiah($value['salary'])?></p>
+              <p class="no-margin">Matching Persentase : <?= $value['matching_persentase']?>%</p>
+            </div>  
+           </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#recent11" data-toggle="tab" style="color:#0088CC;">Danny</a>
-        </li>
+        <?php endforeach ?>
+        
+        
       </ul>
         <div class="tab-content" style="border-left: 4px solid #7fb4ed">
             <div id="popular11" class="tab-pane active">
@@ -73,10 +79,7 @@
 <script src="<?= base_url()?>assets/js/aos.js"></script>
 <script src="<?= base_url()?>assets/js/jquery.animateNumber.min.js"></script>
 <script src="<?= base_url()?>assets/js/bootstrap-datepicker.js"></script>
-<script src="<?= base_url()?>assets/js/jquery.timepicker.min.js"></script>
 <script src="<?= base_url()?>assets/js/scrollax.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-<script src="<?= base_url()?>assets/js/google-map.js"></script>
 <script src="<?= base_url()?>assets/js/main.js"></script>
 <link rel="stylesheet" href="<?= base_url()?>assets/css/default.css">
 <link rel="stylesheet" href="<?= base_url()?>assets/css/theme-elements.css">
@@ -101,3 +104,13 @@
         </script>
 <?php else:?>
 <?php endif;?>
+<style type="text/css">
+  .head{
+    font-size: 22px;
+    color: #000;
+  }
+
+  .no-margin{
+    margin:0;
+  }
+</style>

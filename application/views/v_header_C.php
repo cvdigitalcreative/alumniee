@@ -35,7 +35,7 @@
           </div>
           <div style="display: flex;"> 
                 <div style="margin: 10px 0 5px 5px;">
-                    <a href="<?=base_url()?>Login/Logout"><span class="fa fa-user"></span> Campaigns</a>
+                    <a href="<?=base_url()?>Company"><span class="fa fa-user"></span> Campaigns</a><p style="position: relative;display: inline-block;margin: 0;padding-left: 5px;"><?= $nama?></p>
                 </div>
           </div>
         </div>
