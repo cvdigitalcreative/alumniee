@@ -1,77 +1,108 @@
 <div class="col-lg-12 col-md-6 py-3">
 		<div class="row">		
-			<div class="col-lg-4">
-				<h4>Draft </h4>
-				<div class="tabs">
-					<div class="tab-content">
-						<div id="popular" class="tab-pane active">
-							<div class="row">
-								<div class="col-lg-6">
-									<p style="color:#0997fe;font-size: 20px;">Software Enginner</p>
+
+			<div class="col-lg-6">
+				<div class="borRB" style="height: 555px">
+					<div>
+						<h4 class="d-Ro">Live</h4>
+						<a href="<?= base_url()?>Company/Campaign" target="_blank"><button class="btn btn-primary d-Ro" style="background: #2aacec;float: right;">Buka Lowongan Kerja</button></a>
+					</div>
+					<?php foreach ($data['campaignLive'] as $key => $value):?>
+						<div class="card1">
+							<div class="card-body1">
+								<div class="row">
+									<div class="col-lg-12">
+										<a href="<?= base_url()?>Company/Applications/<?= $value['campaign_id']?>" target="_blank"><p style="color:#0997fe;font-size: 20px;" class="d-Ro"><?= $value['nama_pekerjaan']?></p></a>
+										<a><button class="btn d-Ro" style="float: right;" title="Tutup Lowongan" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-arrow-right"></i></button></a>
+
+									</div>
+									<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									  <div class="modal-dialog" role="document">
+									    <div class="modal-content">
+									      <div class="modal-header">
+									        <h5 class="modal-title" id="exampleModalLabel">Tutup Lowongan "<i><?= $value['nama_pekerjaan']?></i>"</h5>
+									        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									          <span aria-hidden="true">&times;</span>
+									        </button>
+									      </div>
+									      <div class="modal-body">
+									        <form action="<?= base_url()?>Company/Tutup_Lowongan" method="post">
+									        	<input type="hidden" name="campaign_id" value="<?= $value['campaign_id']?>">
+									        	<p>Apakah anda yakin untuk menutup lowongan ini ?</p>
+									      </div>
+									      <div class="modal-footer">
+									        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									        <button type="submit" class="btn btn-success">Ya</button>
+									      </div>
+									      </form>
+									    </div>
+									  </div>
+									</div>
 								</div>
-								<div class="col-lg-6">
-									<p style="color:#0997fe;font-size: 20px;">Draft</p>
+								<div>
+									<div class="d-R">1</div>
+									<div class="d-R" style="float:right;">200+</div>
+									<div class="progress">
+									    <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="500" aria-valuemin="0" aria-valuemax="200" style="width:<?= $value['countMatching']?>%">
+									      <p style="color: #000;margin:0;line-height: 0;">Matching Talent : <?= $value['countMatching']?> talent</p>
+									    </div>
+ 								 	</div>
 								</div>
-							</div>
-							<p style="margin-top: 0px;">Edited 1 week ago | 60% complete</p>
-
-							<div class="post-meta">
-								<span style="padding-right: 100px;">- </span>
-								<span style="padding-right: 114px;">-</span>
-								<span>-</span>
-							</div>
-
-							<div class="post-meta" style="padding-bottom: 8px;">
-								<span style="padding-right: 30px;">Aplication </span>
-								<span style="padding-right: 40px;">Interested</span>
-								<span>Unsorted</span>
-							</div>
-
-							<div class="row">
-								<div class="col-lg-12">
-									<a href="<?= base_url()?>Company/Campaign"><button class="btn btn-primary btn-block" style="background-color: #4fa4e2;">New Campaign +</button></a>
+								
+								<div class="col-md-12 d-flex text-center pt-3">
+									<div class="col-md-6">
+										<p class="no-margin"><?= $value['countAcc']?></p>
+										<p>Application</p>
+									</div>
+									<div class="col-md-6">
+										<p class="no-margin"><?= $value['countRej']?></p>
+										<p>Rejected </p>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
+					<?php endforeach;?>
 				</div>
 			</div>
 
-
-			<div class="col-lg-4">
-				<h4>Live 1</h4>
-				<div class="tabs">
-					<div class="tab-content">
-						<div id="popular" class="tab-pane active">
-							<div class="row">
-								<div class="col-lg-8">
-								<p style="color:#0997fe;font-size: 20px;">Software Enginner</p>
+			<div class="col-lg-6">
+				<div class="borLB" style="height: 555px">
+					<div>
+						<h4>Complete</h4>
+					</div>
+						<?php foreach ($data['campaignComplete'] as $key => $value):?>
+						<div class="card1">
+							<div class="card-body1">
+								<div class="row">
+									<div class="col-lg-12">
+										<a href="<?= base_url()?>Company/Applications/<?= $value['campaign_id']?>" target="blank"><p style="color:#0997fe;font-size: 20px;" class="d-Ro"><?= $value['nama_pekerjaan']?></p></a>
+									</div>
 								</div>
-								<div class="col-lg-4">
-								<p style="text-align: center; font-size: 18px;color: black;background-color:rgba(7,212,223,.5);border-radius: 260px;">Pending</p>	
+								<div>
+									<div class="d-R">1</div>
+									<div class="d-R" style="float:right;">200+</div>
+									<div class="progress">
+									    <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="500" aria-valuemin="0" aria-valuemax="200" style="width:<?= $value['countMatching']?>%">
+									      <p style="color: #000;margin:0;line-height: 0;">Matching Talent : <?= $value['countMatching']?> talent</p>
+									    </div>
+ 								 	</div>
+								</div>
+								
+								<div class="col-md-12 d-flex text-center pt-3">
+									<div class="col-md-6">
+										<p class="no-margin"><?= $value['countAcc']?></p>
+										<p>Application</p>
+									</div>
+									<div class="col-md-6">
+										<p class="no-margin"><?= $value['countRej']?></p>
+										<p>Rejected</p>
+									</div>
 								</div>
 							</div>
-							<p>Submitted 2 weeks ago</p>
 						</div>
-					</div>
+					<?php endforeach;?>
 				</div>
-			</div>
-
-			<div class="col-lg-4">
-				<h4>Complete</h4>
-				<div class="tabs">
-					<div class="tab-content">
-						<div id="popular" class="tab-pane active">
-							<p>Popular</p>
-							<p></p>
-						</div>
-					</div>
-				</div>
-			</div>
-
 		</div>
-
-
 </div>
 
 <!-- loader -->
@@ -103,7 +134,7 @@
         <script type="text/javascript">
                 $.toast({
                     heading: 'Success',
-                    text: "Campaign telah disimpan",
+                    text: "Campaigns telah disimpan",
                     showHideTransition: 'slide',
                     icon: 'info',
                     loader: true,        // Change it to false to disable loader
@@ -114,3 +145,65 @@
         </script>
 <?php else:?>
 <?php endif;?>
+
+<style type="text/css">
+.card1 {
+    width: 100%;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 0 2px 24px #d9d9d9;
+    box-shadow: 0 2px 24px #d9d9d9;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 15px;
+    position: relative;
+}
+.card1:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card1 .card-body1{
+	padding: 20px;
+}
+
+.borRB{
+	padding: 10px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	overflow-y: auto;
+}
+
+.borLB{
+	padding: 10px;
+	border-left: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	overflow-y: auto;
+}
+
+.btn .btn-primary1{
+	background: #2aacec;
+    border: 1px solid #fff;
+    color: #000;
+}
+
+.d-R{
+	color: #bfbfbf;
+	position: relative;
+	display: inline-block;
+	font-size: 11px;
+
+}
+
+.d-Ro{
+	position: relative;
+	display: inline-block;
+}
+
+.no-margin{
+	margin:0;
+}
+
+
+
+</style>

@@ -13,10 +13,12 @@
     	}
 
     	function index(){ //view inbox card campaign
-        
+            $company_id = $this->session->userdata('id');
+            $x['data'] = $this->m_company->getCampaign($company_id);
             if($this->session->userdata('akses') == 2){
-               $this->load->view('v_header_C'); 
-               $this->load->view('v_campaign'); 
+               $y['nama'] = "";
+               $this->load->view('v_header_C',$y); 
+               $this->load->view('v_campaign',$x); 
             }else{
                 redirect('Login');
             }
@@ -25,11 +27,31 @@
 
       function campaign(){ //View Form Campaign
           if($this->session->userdata('akses') == 2){
-             $this->load->view('v_header_C'); 
+             $y['nama'] = "";
+             $this->load->view('v_header_C',$y); 
              $this->load->view('v_companyD'); 
           }else{
               redirect('Login');
           }   
+      }
+
+      function applications($campaign_id){ //View Form Campaign
+          if($this->session->userdata('akses') == 2){
+             $z = $this->m_company->getnameCampaign($campaign_id)->row_array();
+             $y['nama'] = "=>  Nama Pekerjaan : ".$z['nama_pekerjaan'];
+             $status = 1;
+             $x['data'] = $this->m_company->application($campaign_id,$status);
+             $this->load->view('v_header_C',$y); 
+             $this->load->view('v_email',$x); 
+          }else{
+              redirect('Login');
+          }   
+      }
+
+      function tutup_lowongan(){
+        $campaign_id = $this->input->post('campaign_id');
+        $this->m_company->tutupLowongan($campaign_id);
+        redirect('Company');
       }
 
       function saveCampaign(){
@@ -352,11 +374,6 @@
           $v[$i] = $d_neg[$i] / ($d_neg[$i]+$d_plus[$i]);
         }
 
-        echo "<pre>";
-        //print_r($id) ;
-        echo "sebelum ranking: \n\n";
-        print_r ($v);
-        echo "</pre>";
 
         foreach ($v as $key => $value) {
           $rank[$key] = array('talent_id'=>$id[$key]['talent_id'], 'value'=>$value );
@@ -369,7 +386,7 @@
         usort($rank, "method1");
         
         foreach ($rank as $key => $value) {
-          if($value['value']>=0.1)
+          if($value['value']>=0.5)
           {
             $new_rank[$key]['talent_id'] = $value['talent_id'];
             $new_rank[$key]['value'] = round((float)$value['value'] * 100 );

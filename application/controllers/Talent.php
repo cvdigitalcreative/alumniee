@@ -104,6 +104,11 @@
 
             $talent_id = $this->session->userdata('id');
             $this->m_talent->save_profile($question1,$question2,$question3,$question4,$question5,$sumJP,$salary,$universitas,$jurusan,$tahun_lulus,$ipk,$sumL,$sumB,$sumS,$sumD,$sumF,$sumNP,$sumPE,$sumLB,$talent_id);
+
+            
+
+            
+
             echo $this->session->set_flashdata('msg','success');
             redirect('Talent');
         }
