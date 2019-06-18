@@ -3,8 +3,8 @@
         <div class="row mb-5">
           <div class="col-md">
             <div class="ftco-footer-widget mb-4 bg-primary p-4">
-              <h2 class="ftco-heading-2">Alumniee</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <h2 class="ftco-heading-2">Alumne</h2>
+              <p>find your career/talent path with us</p>
               <ul class="ftco-footer-social list-unstyled mb-0">
                 <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
                 <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
@@ -14,12 +14,12 @@
           </div>
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Office</h2>
+            	<h2 class="ftco-heading-2">Kantor</h2>
             	<div class="block-23 mb-3">
 	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+	                <li><span class="icon icon-map-marker"></span><span class="text">Jln. Lunjuk Jaya 19D Palembang,Sumatera Selatan</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+62 811-7199-210</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">admin@alumne.co.id</span></a></li>
 	              </ul>
 	            </div>
             </div>

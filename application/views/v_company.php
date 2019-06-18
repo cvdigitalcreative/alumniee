@@ -53,7 +53,7 @@
                 <span class="flaticon-customer-service"></span>
               </div>
               <div class="media-body pl-4 pl-md-0 pr-md-4 text-md-right">
-                <h3 class="heading">otomatis</h3>
+                <h3 class="heading">Otomatis</h3>
                 <p>Perusahaan akan mendapatkan talent secara otomatis sesuai dengan kriteria yang dimasukan dalam pekerjaan</p>
               </div>
             </div>      
@@ -82,7 +82,7 @@
         <div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
            
-            <h2 class="mb-4">How it works</h2>
+            <h2 class="mb-4">Bagaimana Cara Kerja Alumne</h2>
           </div>
         </div>
         <div class="row">
@@ -154,7 +154,7 @@
             <div class="block-7" style="border: 3px solid #6fb8ef;border-radius: 0 50px 0 50px;">
               <div class="text-center">
                 <h2 class="heading">Basic</h2>
-                <span class="price"><sup>$</sup> <span class="number">15%<small class="per">On-Hire Fee</small></span>
+                <span class="price"> <span class="number">15%<small class="per">On-Hire Fee</small></span>
                 <h3 class="heading-2 mb-3">Membayar Ketika Mempekerjakan Talent</h3>
                 <h3 class="heading-2 mb-3">15 Jobs Posting</h3>
                 <h3 class="heading-2 mb-3">Garansi 45 hari</h3>
@@ -167,7 +167,7 @@
             <div class="block-7" style="border: 3px solid #6fb8ef;border-radius: 50px 0 50px 0;">
               <div class="text-center">
                 <h2 class="heading">Premium</h2>
-                 <span class="price"><sup>$</sup> <span class="number">10%<small class="per">On-Hire Fee</small></span>
+                 <span class="price"> <span class="number">10%<small class="per">On-Hire Fee</small></span>
               
                  <h3 class="heading-2 mb-3">Membayar Ketika Mempekerjakan Talent</h3>
                 <h3 class="heading-2 mb-3">Unlimited Jobs</h3>
@@ -206,7 +206,7 @@
                   <div><p><i>Too time-Consuming</i></p></div>
                 </th>
                 <th>
-                  <div style="font-size: 25px;">Alumne</div>
+                  <div >Alumne</div>
                   <div><p><i>Save your money</i></p></div>
                 </th>
                 <th>
@@ -215,33 +215,33 @@
                 </th>
               </tr>
               <tr>
-                <td>No active selling of candidates or roles*</td>
-                <td><span class="fa fa-check"></td>
-                <td><span class="fa fa-check"></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Delivers only pre-screened & matching applicants</td>
-                <td></td>
-                <td><span class="fa fa-check"></td>
-                <td><span class="fa fa-check"></td>
-              </tr>
-              <tr>
-                <td>Innovative matching engine</td>
+                <td>Memberikan Garansi </td>
                 <td></td>
                 <td><span class="fa fa-check"></td>
                 <td></td>
               </tr>
               <tr>
-                <td>Only pay if you hire</td>
+                <td>Talent yang diberikan sesuai dengan perusahaan</td>
                 <td></td>
                 <td><span class="fa fa-check"></td>
                 <td><span class="fa fa-check"></td>
               </tr>
               <tr>
-                <td>Only pay if you hire</td>
+                <td>Menggunakan sistem otomatis</td>
                 <td></td>
-                <td>10%</td>
+                <td><span class="fa fa-check"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Hanya Membayar jika mendapatkan talent</td>
+                <td></td>
+                <td><span class="fa fa-check"></td>
+                <td><span class="fa fa-check"></td>
+              </tr>
+              <tr>
+                <td>Biaya </td>
+                <td></td>
+                <td>10-15%</td>
                 <td>15-20%</td>
               </tr>
             </table>
@@ -254,7 +254,7 @@
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
-            <h2 class="mb-4">Your Question</h2>
+            <h2 class="mb-4">FAQ</h2>
          
           </div>
         </div>
@@ -287,7 +287,7 @@
 
                   <div class="card">
                     <div class="card-header">
-                      <a class="card-link" data-toggle="collapse"  href="#menu3" aria-expanded="false" aria-controls="menu3">Kenapa biaya rekrutment di ALumne sangat murah ? <span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
+                      <a class="card-link" data-toggle="collapse"  href="#menu3" aria-expanded="false" aria-controls="menu3">Kenapa biaya rekrutment di Alumne sangat murah ? <span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
                     </div>
                     <div id="menu3" class="collapse">
                       <div class="card-body">
@@ -300,11 +300,11 @@
                 <div class="col-md-6">
                   <div class="card">
                     <div class="card-header">
-                      <a class="card-link" data-toggle="collapse"  href="#menu4" aria-expanded="false" aria-controls="menu4">Apakah lowongan yang saya buat di ALumnee akan disebarkan di  platform lowongan kerja lainnya ? <span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
+                      <a class="card-link" data-toggle="collapse"  href="#menu4" aria-expanded="false" aria-controls="menu4">Apakah lowongan yang saya buat di Alumne akan disebarkan di  platform lowongan kerja lainnya ? <span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
                     </div>
                     <div id="menu4" class="collapse">
                       <div class="card-body">
-                        <p>Tidak, ALumne hanya akan memposting lowongan pekerjaan anda disini sehingga anda akan mendapatkan talent yang sesuai</p>
+                        <p>Tidak, Alumne hanya akan memposting lowongan pekerjaan anda disini sehingga anda akan mendapatkan talent yang sesuai</p>
                       </div>
                     </div>
                   </div>
