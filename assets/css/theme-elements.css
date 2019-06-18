@@ -11366,6 +11366,8 @@ html.boxed .slider-container {
 /* Vertical */
 .tabs-vertical {
 	display: table;
+	position: relative;
+	table-layout: fixed;
 	width: 100%;
 	padding: 0;
 	border-top: 1px solid #EEE;
@@ -11374,6 +11376,7 @@ html.boxed .slider-container {
 .tabs-vertical .tab-content {
 	display: table-cell;
 	vertical-align: top;
+	width: 75%;
 }
 
 .tabs-vertical .nav-tabs {
@@ -11381,6 +11384,7 @@ html.boxed .slider-container {
 	display: table-cell;
 	height: 100%;
 	float: none;
+	position: absolute;
 	padding: 0;
 	vertical-align: top;
 	width: 25%;

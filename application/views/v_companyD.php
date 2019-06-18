@@ -380,13 +380,11 @@
                                                 <input type="text" name="ques[]">
                                               </div>
                                             </div>
-
                                         </div>
                                         </div>
                                         <div>
                                           <button type="button" class="button-next100" id="add" style="margin-bottom: 20px;">Tambah Pertanyaan</button>
                                         </div>
-                                          
                                         <button type="button" class="button-next button3" style="margin-bottom:20px;"><span class=>Next</span></button>
                                       </div>
                                     </div>

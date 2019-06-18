@@ -25,6 +25,21 @@
         	
     	}
 
+      function Up($status){
+        $campaign_id = $this->input->post("campaign_id");
+        $talent_id = $this->input->post("talent_id");
+        if($status == 3){
+          $this->m_company->upStatus($campaign_id,$talent_id,"","",$status);
+        }elseif($status == 4){
+          $jadwal_wawancara = $this->input->post("wawancara");
+          $jalur = $this->input->post("jalur");
+          $this->m_company->upStatus($campaign_id,$talent_id,$jadwal_wawancara,$jalur,$status);
+        }elseif($status == 5){
+          $this->m_company->upStatus($campaign_id,$talent_id,"","",$status);
+        }
+        redirect('Company/Applications/'.$campaign_id);
+      }
+
       function campaign(){ //View Form Campaign
           if($this->session->userdata('akses') == 2){
              $y['nama'] = "";
@@ -40,6 +55,23 @@
              $z = $this->m_company->getnameCampaign($campaign_id)->row_array();
              $y['nama'] = "=>  Nama Pekerjaan : ".$z['nama_pekerjaan'];
              $status = 1;
+             $x['status'] =$status;
+             $x['campaign_id'] =$campaign_id;
+             $x['data'] = $this->m_company->application($campaign_id,$status);
+             $this->load->view('v_header_C',$y); 
+             $this->load->view('v_email',$x); 
+          }else{
+              redirect('Login');
+          }   
+      }
+
+      function Application_Status($status){ //View Form Campaign
+          if($this->session->userdata('akses') == 2){
+             $campaign_id =$this->uri->segment(4);
+             $z = $this->m_company->getnameCampaign($campaign_id)->row_array();
+             $y['nama'] = "=>  Nama Pekerjaan : ".$z['nama_pekerjaan'];
+             $x['campaign_id'] =$campaign_id;
+             $x['status'] =$status;
              $x['data'] = $this->m_company->application($campaign_id,$status);
              $this->load->view('v_header_C',$y); 
              $this->load->view('v_email',$x); 
@@ -107,18 +139,7 @@
           $sumF.=$skillFramework[$i].";";
         }
 
-        $question = $this->input->post('ques[]');
-        $sizeQ = sizeof($question);
-        for($i=0; $i < $sizeQ; $i++){
-          $sumQ.=$question[$i].";";
-        }
-
-        $company_id = $this->session->userdata('id');
-        $this->m_company->save_campaign($nama_pekerjaan,$url,$companyd,$roledc,$salary,$ipk,$sumJP,$sumL,$sumJ,$sumB,$sumS,$sumD,$sumF,$sumQ,$company_id);
-        $x=$this->db->query("SELECT * FROM `campaign`ORDER BY `campaign`.`campaign_id`  DESC LIMIT 1");
-        $z=$x->row_array();
-        $campaign_id=$z['campaign_id'];
-
+        
         
 
         $bobot_candidate = $this->M_proses->get_candidate();
@@ -392,12 +413,24 @@
             $new_rank[$key]['value'] = round((float)$value['value'] * 100 );
           }
         }
+
+        $company_id = $this->session->userdata('id');
+        $this->m_company->save_campaign($nama_pekerjaan,$url,$companyd,$roledc,$salary,$ipk,$sumJP,$sumL,$sumJ,$sumB,$sumS,$sumD,$sumF,$company_id);
+        $x=$this->db->query("SELECT * FROM `campaign`ORDER BY `campaign`.`campaign_id`  DESC LIMIT 1");
+        $z=$x->row_array();
+        $campaign_id=$z['campaign_id'];
+
         if(empty($new_rank))
           $new_rank = [];
 
           foreach ($new_rank as $key => $value) {
             $this->m_company->saveBC($campaign_id,$value['talent_id'],$value['value']);
-          }
+            $question = $this->input->post('ques[]');
+            $sizeQ = sizeof($question);
+            for($i=0; $i < $sizeQ; $i++){
+              $this->m_company->savequestion($question[$i],$value['talent_id'],$campaign_id);
+            }
+          }  
 
           echo $this->session->set_flashdata('msg','success');
           redirect('Company');
