@@ -10,8 +10,8 @@
 			return $this->db->query("SELECT * FROM campaign WHERE campaign_id = '$campaign_id'");
 		}
 		
-		function save_campaign($nama_pekerjaan,$url,$companyd,$roledc,$salary,$ipk,$jenis_pekerjaan,$lokasi,$jurusan,$bahasa,$skillLanguage,$skillDatabase,$skillFramework,$question,$company_id){
-			$this->db->query("INSERT INTO campaign(nama_pekerjaan,url,companyd,roledc,salary,ipk,jenis_pekerjaan,lokasi,jurusan,bahasa,skillLanguage,skillDatabase,skillFramework,question,company_id) VALUES ('$nama_pekerjaan','$url','$companyd','$roledc','$salary','$ipk','$jenis_pekerjaan','$lokasi','$jurusan','$bahasa','$skillLanguage','$skillDatabase','$skillFramework','$question','$company_id')");
+		function save_campaign($nama_pekerjaan,$url,$companyd,$roledc,$salary,$ipk,$jenis_pekerjaan,$lokasi,$jurusan,$bahasa,$skillLanguage,$skillDatabase,$skillFramework,$company_id){
+			$this->db->query("INSERT INTO campaign(nama_pekerjaan,url,companyd,roledc,salary,ipk,jenis_pekerjaan,lokasi,jurusan,bahasa,skillLanguage,skillDatabase,skillFramework,company_id) VALUES ('$nama_pekerjaan','$url','$companyd','$roledc','$salary','$ipk','$jenis_pekerjaan','$lokasi','$jurusan','$bahasa','$skillLanguage','$skillDatabase','$skillFramework','$company_id')");
 		}
 
 		function saveBC($campaign_id,$talent_id,$matching_talent){
@@ -54,8 +54,26 @@
 			$this->db->query("UPDATE campaign SET campaign_status = 1 WHERE campaign_id = '$campaign_id'");
 		}
 
+		function upStatus($campaign_id,$talent_id,$wawancara=NULL,$jalur=NULL,$status){
+			$this->db->query("UPDATE broadcast_campaign SET status = '$status', jadwal_wawancara = '$wawancara', via_wawancara='$jalur' WHERE campaign_id = '$campaign_id' AND talent_id='$talent_id'");
+		}
+
 		function application($campaign_id,$status){
-			return $this->db->query("SELECT * FROM broadcast_campaign a,talent b,profile c WHERE a.campaign_id = '$campaign_id' AND a.status = '$status' AND a.talent_id = b.talent_id AND b.talent_id = c.talent_id")->result_array();
+			$data = $this->db->query("SELECT * FROM broadcast_campaign a,talent b,profile c WHERE a.campaign_id = '$campaign_id' AND a.status = '$status' AND a.talent_id = b.talent_id AND b.talent_id = c.talent_id")->result_array();
+			$count = 0;
+			foreach ($data as $key => $value) {
+				$value1 = $this->db->query("SELECT * FROM question WHERE campaign_id = ".$value['campaign_id']." AND talent_id = ".$value['talent_id']." ORDER BY campaign_id  DESC")->result_array();
+
+				$data[$count]['question']=$value1;
+				$count++;		
+			}
+
+			return $data;
+
+		}
+
+		function savequestion($pertanyaan,$talent_id,$campaign_id){
+			$this->db->query("INSERT INTO question(pertanyaan,talent_id,campaign_id) VALUES ('$pertanyaan','$talent_id','$campaign_id')");
 		}
 
 	}
