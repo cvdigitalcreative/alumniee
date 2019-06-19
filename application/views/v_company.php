@@ -159,7 +159,7 @@
                 <h3 class="heading-2 mb-3">15 Jobs Posting</h3>
                 <h3 class="heading-2 mb-3">Garansi 45 hari</h3>
                  <h3 class="heading-2 mb-3">Free</h3>
-                <a href="<?= base_url()?>Register#v-pills-performance-tab" class="btn btn-primary d-block px-3 py-3 mb-4">Daftar</a>
+                <a href="<?= base_url()?>Register#v-pills-performance" class="btn btn-primary d-block px-3 py-3 mb-4">Daftar</a>
               </div>
             </div>
           </div>
@@ -181,7 +181,7 @@
                 </select> 
                 </div>
                 
-                <a href="<?= base_url()?>Register#v-pills-performance-tab" class="btn btn-primary d-block px-3 py-3 mb-4">Daftar</a>
+                <a href="<?= base_url()?>Register#v-pills-performance" class="btn btn-primary d-block px-3 py-3 mb-4">Daftar</a>
               </div>
             </div>
           </div>
