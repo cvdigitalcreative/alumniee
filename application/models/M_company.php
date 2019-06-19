@@ -6,6 +6,14 @@
 	class M_company extends CI_Model
 	{
 
+		function get_question($campaign_id){
+			return $this->db->query("SELECT distinct pertanyaan FROM question WHERE campaign_id = '$campaign_id'")->result_array();
+		}
+
+		function delete_question($talent_id){
+			$this->db->query("delete from question where talent_id='$talent_id'  ");
+		}
+
 		function getnameCampaign($campaign_id){
 			return $this->db->query("SELECT * FROM campaign WHERE campaign_id = '$campaign_id'");
 		}
