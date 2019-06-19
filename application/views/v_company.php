@@ -8,7 +8,7 @@
               
               <h1 class="mb-3">Build Your Team, Build Your Dream</h1>
               <p>Temukan talent yang sesuai dengan perusahaan anda</p>
-              <p><a href="#" class="btn btn-primary px-4 py-3">Search a Talent</a></p>
+              <p><a href="<?= base_url()?>Login" class="btn btn-primary px-4 py-3">Search a Talent</a></p>
             </div>
           </div>
         </div>
@@ -159,7 +159,7 @@
                 <h3 class="heading-2 mb-3">15 Jobs Posting</h3>
                 <h3 class="heading-2 mb-3">Garansi 45 hari</h3>
                  <h3 class="heading-2 mb-3">Free</h3>
-                <a href="#" class="btn btn-primary d-block px-3 py-3 mb-4">Daftar</a>
+                <a href="<?= base_url()?>Register" class="btn btn-primary d-block px-3 py-3 mb-4">Daftar</a>
               </div>
             </div>
           </div>
@@ -181,7 +181,7 @@
                 </select> 
                 </div>
                 
-                <a href="#" class="btn btn-primary d-block px-3 py-3 mb-4">Daftar</a>
+                <a href="<?= base_url()?>Register" class="btn btn-primary d-block px-3 py-3 mb-4">Daftar</a>
               </div>
             </div>
           </div>

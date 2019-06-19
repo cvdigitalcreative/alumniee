@@ -10,7 +10,7 @@
 	        		
 	            <h1 class="mb-3">Temukan Karir Sesuai Impian Anda</h1>
 	            <p>Alumne hadir untuk membantu anda dalam menemukan karir yang sesuai dengan personal diri anda</p>
-	            <p><a href="#" class="btn btn-primary px-4 py-3">Cari Pekerjaan</a></p>
+	            <p><a href="<?= base_url()?>Login" class="btn btn-primary px-4 py-3">Cari Pekerjaan</a></p>
 	          </div>
 	        </div>
 	    	</div>
