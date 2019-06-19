@@ -305,16 +305,16 @@
                                               <label for='checkbox14'>Jakarta</label>
                                             </div>
                                              <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Tanggerang" name='s2[]'  id='checkbox14'/>
-                                              <label for='checkbox14'>Tanggerang</label>
+                                              <input type='checkbox' value="Tanggerang" name='s2[]'  id='checkbox923'/>
+                                              <label for='checkbox923'>Tanggerang</label>
                                             </div>
                                              <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Bekasi" name='s2[]'  id='checkbox14'/>
-                                              <label for='checkbox14'>Bekasi</label>
+                                              <input type='checkbox' value="Bekasi" name='s2[]'  id='checkbox921'/>
+                                              <label for='checkbox921'>Bekasi</label>
                                             </div>
                                              <div class="mt-2 checkboxp">
-                                              <input type='checkbox' value="Bogor" name='s2[]'  id='checkbox14'/>
-                                              <label for='checkbox14'>Bogor</label>
+                                              <input type='checkbox' value="Bogor" name='s2[]'  id='checkbox922'/>
+                                              <label for='checkbox922'>Bogor</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
                                               <input type='checkbox' value="Bandung" name='s2[]'  id='checkbox15'/>

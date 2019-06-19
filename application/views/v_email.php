@@ -174,7 +174,7 @@
                     foreach($value['question'] as $key2 => $value2) :?>
                       <p class="hitam no-margin"> <?=  $count.". ".$value2['pertanyaan']?></p>
                       <div class="card1">
-                        <p><? = $value2['jawaban']?></p>
+                        <p><?= $value2['jawaban']?></p>
                       </div> 
                     <?php 
                     $count ++;

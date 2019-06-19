@@ -45,6 +45,13 @@
             }
         }
 
+        function Up($status){
+            $campaign_id = $this->input->post("campaign_id");
+            $talent_id = $this->input->post("talent_id");
+             $this->m_company->upStatus($campaign_id,$talent_id,"","",$status);
+           redirect('Talent/Campaign/'.$talent_id);
+        }
+
         function upTalent(){
             $question_id = $this->input->post('question_id');
             $answer = $this->input->post('jawaban');
@@ -374,11 +381,7 @@
               $v[$i] = $d_neg[$i] / ($d_neg[$i]+$d_plus[$i]);
             }
 
-            echo "<pre>";
-            //print_r($id) ;
-            echo "sebelum ranking: \n\n";
-            print_r ($v);
-            echo "</pre>";
+           
 
             foreach ($v as $key => $value) {
               $rank[$key] = array('campaign_id'=>$id[$key]['campaign_id'], 'value'=>$value );
@@ -403,11 +406,15 @@
             if(empty($new_rank))
               $new_rank = [];
 
+            $this->m_company->deletetalent($talent_id);
             foreach ($new_rank as $key => $value) {
                 $this->m_company->saveBC($value['campaign_id'],$talent_id,$value['value']);
             }
 
-            echo $this->session->set_flashdata('msg','success');
+
+
+        
+
             redirect('Talent/Campaign/'.$talent_id);
         }
 

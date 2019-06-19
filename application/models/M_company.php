@@ -18,6 +18,10 @@
 			$this->db->query("INSERT INTO broadcast_campaign(campaign_id,talent_id,matching_persentase) VALUES('$campaign_id','$talent_id','$matching_talent')");
 		}
 
+		function deletetalent($talent_id){
+			$this->db->query("delete from broadcast_campaign where talent_id='$talent_id' and status=0 ");
+		}
+
 		function RejectBC($talent_id){
 			$this->db->query("UPDATE broadcast_campaign SET status = 2 WHERE talent_id = '$talent_id'");
 		}

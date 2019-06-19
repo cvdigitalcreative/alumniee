@@ -150,6 +150,29 @@
                 </form>
               </div>              
             </div>
+
+            <div class="modal fade" id="rej" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <form action="<?= base_url()?>Talent/Up/5" method="post">
+                          <div class="modal-body">
+                            <input type="hidden" name="talent_id" value="<?= $talent_id?>">
+                            <input type="hidden" name="campaign_id" value="<?= $value['campaign_id']?>">
+                            <p>Apakah anda yakin menolak Lowongan Ini ini?</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
+                            <button type="submit" class="btn btn-success">Ya</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
           <?php 
           $count1++;
           endforeach ?>
@@ -165,50 +188,8 @@
   </div>
 <?php endif;?>
 </div>
-                  <div class="modal fade" id="acc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <form action="<?= base_url()?>Company/Up/3" method="post">
-                          <div class="modal-body">
-                            <input type="hidden" name="campaign_id" value="">
-                            <input type="hidden" name="talent_id" value="">
-                            <p>Apakah anda yakin untuk ingin menerima talent ini?</p>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
-                            <button type="submit" class="btn btn-success">Ya</button>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal fade" id="rej" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <form action="<?= base_url()?>Company/Up/5" method="post">
-                          <div class="modal-body">
-                            <input type="hidden" name="campaign_id" value="">
-                            <input type="hidden" name="talent_id" value="">
-                            <p>Apakah anda yakin menolak talent ini?</p>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
-                            <button type="submit" class="btn btn-success">Ya</button>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
+                 
+                  
 
 
 

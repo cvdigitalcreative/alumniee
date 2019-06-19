@@ -23,7 +23,7 @@
 		}
 
 		function getAppTalent($talent_id){
-			$data = $this->db->query("SELECT * FROM broadcast_campaign a,campaign b WHERE a.talent_id = '$talent_id' AND a.status = '1' AND a.campaign_id = b.campaign_id OR a.status = '3' AND a.campaign_id = b.campaign_id OR a.status = '4' AND a.campaign_id = b.campaign_id OR a.status = '5' AND a.campaign_id = b.campaign_id ORDER BY a.matching_persentase ASC")->result_array();
+			$data = $this->db->query("SELECT * FROM broadcast_campaign a,campaign b WHERE a.talent_id = '$talent_id' AND ( a.status = '1' AND a.campaign_id = b.campaign_id OR a.status = '3' AND a.campaign_id = b.campaign_id OR a.status = '4' AND a.campaign_id = b.campaign_id OR a.status = '5' AND a.campaign_id = b.campaign_id ) ORDER BY a.matching_persentase ASC")->result_array();
 			$count = 0;
 			foreach ($data as $key => $value) {
 				$value1 = $this->db->query("SELECT * FROM question WHERE campaign_id = ".$value['campaign_id']." AND talent_id = '$talent_id' ORDER BY campaign_id  DESC")->result_array();
