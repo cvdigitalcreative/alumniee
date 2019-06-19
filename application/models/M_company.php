@@ -18,6 +18,10 @@
 			$this->db->query("INSERT INTO broadcast_campaign(campaign_id,talent_id,matching_persentase) VALUES('$campaign_id','$talent_id','$matching_talent')");
 		}
 
+		function RejectBC($talent_id){
+			$this->db->query("UPDATE broadcast_campaign SET status = 2 WHERE talent_id = '$talent_id'");
+		}
+
 		function getCampaign($company_id){
 			$final['campaignLive'] =  $this->db->query("SELECT * FROM campaign WHERE company_id = '$company_id' AND campaign_status = '0' ORDER BY campaign_id DESC")->result_array();
 			$count = 0;

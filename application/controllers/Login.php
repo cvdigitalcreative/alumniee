@@ -27,7 +27,7 @@ class Login extends CI_Controller{
             $this->session->set_userdata('email',$email);
             $this->session->set_userdata('id',$id);
             $this->session->set_userdata('nama',$nama);
-            redirect('Talent');        
+            redirect('Talent/campaign/'.$id);        
         }
         elseif($cCompany->num_rows() > 0){
             $this->session->set_userdata('masuk',true);
