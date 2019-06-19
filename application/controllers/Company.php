@@ -29,6 +29,7 @@
         $campaign_id = $this->input->post("campaign_id");
         $talent_id = $this->input->post("talent_id");
         if($status == 3){
+          $this->m_company->RejectBC($talent_id);
           $this->m_company->upStatus($campaign_id,$talent_id,"","",$status);
         }elseif($status == 4){
           $jadwal_wawancara = $this->input->post("wawancara");

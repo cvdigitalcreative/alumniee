@@ -13,6 +13,17 @@ class M_proses extends CI_Model {
 	{
 		$query = $this->db->query("select talent_id from profile limit 10");
     	return $query->result_array();
+	}
+
+	function get_campaign()
+	{	
+		$query = $this->db->query("select salary, ipk, bahasa, skillLanguage, skillDatabase, skillFramework from campaign limit 10");
+    	return $query->result_array();
+	}
+	function get_id_campaign()
+	{
+		$query = $this->db->query("select campaign_id from campaign limit 10");
+    	return $query->result_array();
 	}	
 
 }

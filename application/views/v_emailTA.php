@@ -1,31 +1,20 @@
-<?php
-  function rupiah($angka){
-    $hasil_rupiah = "Rp " . number_format($angka,0,',','.');
-    return $hasil_rupiah;
-  }
-?>
-<div class="topnav">
-  <div style="display: flex;"> 
-    <div style="margin: 10px 0 10px 10px;">
-      <a href="<?=base_url()?>Company/Application_Status/3/<?= $campaign_id?>" target="_blank">Diterima</a>
-      <a href="<?=base_url()?>Company/Application_Status/4/<?= $campaign_id?>" target="_blank">Dijadwalkan</a>
-      <a href="<?=base_url()?>Company/Application_Status/5/<?= $campaign_id?>" target="_blank">Ditolak</a>
-    </div>
-  </div>
-</div>
 <div class="col-lg-12">
-<?php if(!empty($data)) :?>
+<?php if(!empty($data1)) :?>
 <div class="row">
   <div class="col-lg-12">
     <div class="tabs tabs-vertical tabs-left">
       <ul class="nav nav-tabs" style="overflow-y: auto;overflow-x:hidden;">
         <?php
+          function rupiah($angka){
+            $hasil_rupiah = "Rp " . number_format($angka,0,',','.');
+            return $hasil_rupiah;
+          }
         $count = 0;
-        foreach ($data as $key => $value): ?>
+        foreach ($data1 as $key => $value): ?>
           <li class="nav-item">
            <a class="nav-link navigasi" href="#<?= $count?>" id="r<?= $count?>" data-toggle="tab" style="color:#0088CC;">
             <div>
-              <p class="head no-margin"><?= $value['nama']?></p>
+              <p class="head no-margin"><?= $value['nama_pekerjaan']?></p>
               <p class="no-margin">Permintaan Gaji : <?= rupiah($value['salary'])?></p>
               <p class="no-margin">Persentase Kecocokan : <?= $value['matching_persentase']?>%</p>
             </div>  
@@ -38,13 +27,13 @@
         <div class="tab-content" style="border-left: 4px solid #7fb4ed">
           <?php 
           $count1 = 0;
-          foreach ($data as $key => $value): ?>
+          foreach ($data1 as $key => $value): ?>
             <div id="<?= $count1?>" class="tab-pane">
               <div class="col-lg-12 d-flex">
                 <div class="col-md-7" style="padding-left: 0;">
                   <div>
-                    <h2 style="margin-bottom: 1px;"><?= $value['nama']?></h2>
-                    <p><?= $value['email']?></p>
+                    <h2 style="margin-bottom: 1px;"><?= $value['nama_pekerjaan']?></h2>
+                    <a href="https://<?= $value['url']?>"><p><?= $value['url']?></p></a>
                     <?php if($status == 4):
                       $Date = date("d-m-Y", strtotime($value['jadwal_wawancara']));
                       ?>
@@ -52,25 +41,61 @@
                     <?php else:?>
                     <?php endif;?>
                   </div>
-                  <div class="card1">
+                  <div class="card1 overflow" style="height: 388px;">
                     <div class="card-header text-center">
-                      <h4 class="no-margin">Profile</h4>
+                      <h4 class="no-margin">Informasi Penerimaan</h4>
                     </div>
                     <div style="margin-top: 10px">
-                      <h5 class="mb-1" style="margin-bottom: 0px"><u>Pendidikan</u></h5>
+                      <h5 class="mb-1" style="margin-bottom: 0px"><u>Deskripsi Perusahaan</u></h5>
+                      <div class="col-lg-12 no-mp d-flex">
+                        <p class="no-margin mb-1"><?= $value['companyd']?></p>
+                      </div> 
+                    </div>
+                    <div style="margin-top: 10px">
+                      <h5 class="mb-1" style="margin-bottom: 0px"><u>Deskripsi Aturan Diperusahaan</u></h5>
+                      <div class="col-lg-12 no-mp d-flex">
+                        <p class="no-margin mb-1"><?= $value['roledc']?></p>
+                      </div> 
+                    </div>
+                    <div style="margin-top: 10px">
+                      <h5 class="mb-1" style="margin-bottom: 0px"><u>Minimun IPK</u></h5>
                       <div class="col-lg-12 no-mp d-flex">
                         <div class="col-lg-6 no-mp">
-                          <p class="no-margin mb-1">Universitas : <?= $value['universitas']?></p>
-                          <p class="no-margin mb-1">Tahun Lulus : <?= $value['tahun_lulus']?></p>
-                        </div>
-                        <div class="col-lg-6 no-mp">
-                          <p class="no-margin mb-1">Jurusan : <?= $value['jurusan']?></p>
                           <p class="no-margin mb-1">IPK : <?= $value['ipk']?></p>
                         </div>
                       </div> 
                     </div>
                     <div style="margin-top: 10px">
-                      <h5 class="mb-1" style="margin-bottom: 0px"><u>Skill</u></h5>
+                      <h5 class="mb-1" style="margin-bottom: 0px"><u>Jenis Pekerjaan yang dibutuhkan</u></h5>
+                      <div class="col-lg-12 no-mp">
+                        <?php
+                          $skill = explode(";", $value['jenis_pekerjaan']);
+                          array_pop($skill);
+                          $count = 0;
+                          foreach ($skill as $key => $value1) {
+                            echo '<button type="button" class="btn btn-success" style="margin-right:10px;">"'.$value1.'"</button>';
+                            $count++;
+                          }
+                        ?>
+                      </div> 
+                    </div>
+                    
+                    <div style="margin-top: 10px">
+                      <h5 class="mb-1" style="margin-bottom: 0px"><u>Lokasi Penempatan</u></h5>
+                      <div class="col-lg-12 no-mp">
+                        <?php
+                          $skill = explode(";", $value['lokasi']);
+                          array_pop($skill);
+                          $count = 0;
+                          foreach ($skill as $key => $value1) {
+                            echo '<button type="button" class="btn btn-success" style="margin-right:10px;">"'.$value1.'"</button>';
+                            $count++;
+                          }
+                        ?>
+                      </div> 
+                    </div>
+                    <div style="margin-top: 10px">
+                      <h5 class="mb-1" style="margin-bottom: 0px"><u>Skill Yang dibutuhkan</u></h5>
                       <div class="col-lg-12 no-mp">
                         <?php
                           $string = $value['bahasa'].$value['skillLanguage'].$value['skillDatabase'].$value['skillFramework'];
@@ -85,16 +110,50 @@
                       </div> 
                     </div>
                   </div>
+                  <form action="<?= base_url()?>Talent/upTalent" method="post">
                   <?php if($status == 3 || $status == 4 || $status == 5):?>
 
-                  <?php else: ?>
-                    <div class="col-lg-12 text-center" style="margin-top:15%;">
-                      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#acc">Terima</button>
-                      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#jadwal">Jadwal Wawancara</button>
-                      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#rej">Tolak</button>
-                    </div>
-                  <?php endif;?>
-                  
+                    <?php else: ?>
+                      <div class="col-lg-12 text-center" style="margin-top:2%;">
+                        <button type="submit" class="btn btn-success">Terima</button>
+                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#rej">Tolak</button>
+                      </div>
+                    <?php endif;?>
+        
+                </div>
+                <div class="col-lg-5 no-margin borLB borTB overflow" style="padding-left: 10px;padding-top: 5px; height:493px;">
+                    <input type="hidden" name="talent_id" value="<?= $talent_id?>">
+                    <input type="hidden" name="campaign_id" value="<?= $value['campaign_id']?>">
+                    <?php 
+                    $count = 1;
+                    foreach($value['question'] as $key2 => $value2) :?>
+                      <p class="hitam no-margin"> <?=  $count.". ".$value2['pertanyaan']?> <i for="count1"></i></p>
+                      <div class="card1">
+                        <input type="hidden" name="question_id[]" value="<?= $value2['question_id']?>">
+                        <textarea rows="4" style="width: 100%" name="jawaban[]" required></textarea>
+                      </div> 
+                    <?php 
+                    $count ++;
+                    endforeach;?>
+                  </form>
+                </div>
+              </div>              
+            </div>
+          <?php 
+          $count1++;
+          endforeach ?>
+        </div>
+      </div>
+  </div>
+</div>
+<?php else :?>
+  <div class="icon">
+    <div class="fa fa-inbox fass">
+    </div>
+    <p>Nothing Application   Sir</p>
+  </div>
+<?php endif;?>
+</div>
                   <div class="modal fade" id="acc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                       <div class="modal-content">
@@ -105,41 +164,13 @@
                         </div>
                         <form action="<?= base_url()?>Company/Up/3" method="post">
                           <div class="modal-body">
-                            <input type="hidden" name="campaign_id" value="<?= $campaign_id?>">
-                            <input type="hidden" name="talent_id" value="<?= $value['talent_id']?>">
+                            <input type="hidden" name="campaign_id" value="">
+                            <input type="hidden" name="talent_id" value="">
                             <p>Apakah anda yakin untuk ingin menerima talent ini?</p>
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
                             <button type="submit" class="btn btn-success">Ya</button>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal fade" id="jadwal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <form action="<?= base_url()?>Company/Up/4" method="post">
-                          <div class="modal-body">
-                            <input type="hidden" name="campaign_id" value="<?= $campaign_id?>">
-                            <input type="hidden" name="talent_id" value="<?= $value['talent_id']?>">
-                            <p class="mb-1">Masukkan tanggal wawancara?</p>
-                            <input class="form-control mt-2" type="date" name="wawancara" >
-                            <p class="mb-1 mt-2">Wawancara akan dilakukan di?</p>
-                            <select class="form-control mt-2" name="jalur">
-                              <option value="Online">Online</option>
-                              <option value="Kantor">Kantor</option>
-                            </select>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                            <button type="submit" class="btn btn-success">Save</button>
                           </div>
                         </form>
                       </div>
@@ -155,8 +186,8 @@
                         </div>
                         <form action="<?= base_url()?>Company/Up/5" method="post">
                           <div class="modal-body">
-                            <input type="hidden" name="campaign_id" value="<?= $campaign_id?>">
-                            <input type="hidden" name="talent_id" value="<?= $value['talent_id']?>">
+                            <input type="hidden" name="campaign_id" value="">
+                            <input type="hidden" name="talent_id" value="">
                             <p>Apakah anda yakin menolak talent ini?</p>
                           </div>
                           <div class="modal-footer">
@@ -167,36 +198,6 @@
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-lg-5 no-margin borLB borTB overflow" style="padding-left: 10px;padding-top: 5px; height:493px;">
-                    <?php 
-                    $count = 1;
-                    foreach($value['question'] as $key2 => $value2) :?>
-                      <p class="hitam no-margin"> <?=  $count.". ".$value2['pertanyaan']?></p>
-                      <div class="card1">
-                        <p><? = $value2['jawaban']?></p>
-                      </div> 
-                    <?php 
-                    $count ++;
-                    endforeach;?>
-                </div>
-              </div>              
-            </div>
-          <?php 
-          $count1++;
-          endforeach ?>
-        </div>
-      </div>
-</div>
-</div>
-<?php else :?>
-  <div class="icon">
-    <div class="fa fa-inbox fass">
-    </div>
-    <p>Nothing Application   Sir</p>
-  </div>
-<?php endif;?>
-</div>
 
 
 
@@ -218,6 +219,7 @@
 <script src="<?= base_url()?>assets/js/bootstrap-datepicker.js"></script>
 <script src="<?= base_url()?>assets/js/scrollax.min.js"></script>
 <script src="<?= base_url()?>assets/js/main.js"></script>
+  <script src="<?= base_url()?>assets/js/jquery.validate.js"></script>
 <link rel="stylesheet" href="<?= base_url()?>assets/css/default.css">
 <link rel="stylesheet" href="<?= base_url()?>assets/css/theme-elements.css">
     
