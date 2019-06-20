@@ -56,7 +56,7 @@
             	</div>
               <div class="media-body pl-4 pl-md-0 pr-md-4 text-md-right">
                 <h3 class="heading">Otomatis</h3>
-                <p>Anda akan mendapatkan lowongan pekerjaan yang sesuai dengan anda tanpa anda melakukan pencarian</p>
+                <p>Anda akan mendapatkan lowongan pekerjaan yang sesuai tanpa harus melakukan pencarian</p>
               </div>
             </div>      
           </div>
