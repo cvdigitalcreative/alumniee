@@ -6,9 +6,9 @@
               <h2 class="ftco-heading-2">Alumne</h2>
               <p>Find your career or talent with us</p>
               <ul class="ftco-footer-social list-unstyled mb-0">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                
+                <li class="ftco-animate"><a href="https://www.facebook.com/alumne.co.id"><span class="icon-facebook"></span></a></li>
+             
               </ul>
             </div>
           </div>
