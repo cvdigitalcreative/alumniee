@@ -173,7 +173,7 @@
                                             </div>
                                           </div>
                                           <div class="card-header1" style="margin-top:10px;">
-                                            <h5>Berapa gaji yang anda inginkan ?</h5>
+                                            <h5>Berapa kisaran gaji yang anda inginkan ?</h5>
                                           </div>
                                           <div class="">
                                             <select class="select-next" name="salary">
@@ -202,7 +202,7 @@
 
                                   <div class="card" id="23">
                                     <div class="card-header">
-                                      <a class="card-link" data-toggle="collapse" id="dropdown3" aria-expanded="false" aria-controls="menu3">Lulusan darimanakah anda  ?<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
+                                      <a class="card-link" data-toggle="collapse" id="dropdown3" aria-expanded="false" aria-controls="menu3">Pendidikan Terakhir ?<span class="collapsed"><i class="ion-ios-arrow-up"></i></span><span class="expanded"><i class="ion-ios-arrow-down"></i></span></a>
                                     </div>
                                     <div id="menu3" class="collapse">
                                       <div class="card-body">
@@ -453,6 +453,53 @@
                                               <input type='checkbox' value='Java' name='s5[]'  id='checkbox43'/>
                                               <label for='checkbox43'>Java</label>
                                             </div>
+
+                                             <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Python' name='s5[]'  id='checkbox400'/>
+                                              <label for='checkbox400'>Python</label>
+                                            </div>
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Javascript' name='s5[]'  id='checkbox401'/>
+                                              <label for='checkbox401'>Javascript</label>
+                                            </div>
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Swift' name='s5[]'  id='checkbox402'/>
+                                              <label for='checkbox402'>Swift</label>
+                                            </div>
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Ruby' name='s5[]'  id='checkbox403'/>
+                                              <label for='checkbox403'>Ruby</label>
+                                            </div>
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Visual-Basic' name='s5[]'  id='checkbox404'/>
+                                              <label for='checkbox404'>Visual Basic</label>
+                                            </div>
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='React' name='s5[]'  id='checkbox405'/>
+                                              <label for='checkbox405'>Golang</label>
+                                            </div>
+                                             <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='React-Native' name='s5[]'  id='checkbox406'/>
+                                              <label for='checkbox406'>React Native</label>
+                                            </div>
+                                             <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Rust' name='s5[]'  id='checkbox407'/>
+                                              <label for='checkbox407'>Rust</label>
+                                            </div>
+                                             <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Kotlin' name='s5[]'  id='checkbox407'/>
+                                              <label for='checkbox407'>Kotlin</label>
+                                            </div>
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Typescript' name='s5[]'  id='checkbox408'/>
+                                              <label for='checkbox408'>Typescript</label>
+                                            </div>
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Perl' name='s5[]'  id='checkbox409'/>
+                                              <label for='checkbox409'>Perl</label>
+                                            </div>
+
+
                                             <div class="mt-2 checkboxp">
                                               <input type='checkbox' value='PHP, HTML, CSS' name='s5[]'  id='checkbox44'/>
                                               <label for='checkbox44'>PHP, HTML, CSS</label>
@@ -487,6 +534,30 @@
                                               <input type='checkbox' value='SQL Server' name='s8[]'  id='checkbox50'/>
                                               <label for='checkbox50'>SQL Server</label>
                                             </div>
+
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='MongoDB' name='s8[]'  id='checkbox430'/>
+                                              <label for='checkbox430'>MongoDB</label>
+                                            </div>
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='MariaDB' name='s8[]'  id='checkbox431'/>
+                                              <label for='checkbox431'>MariaDB</label>
+                                            </div>
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='DB2' name='s8[]'  id='checkbox432'/>
+                                              <label for='checkbox432'>DB2</label>
+                                            </div>
+                                             <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Sap-Hana' name='s8[]'  id='checkbox433'/>
+                                              <label for='checkbox433'>Sap Hana</label>
+                                            </div>
+                                             <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Firebase' name='s8[]'  id='checkbox434'/>
+                                              <label for='checkbox434'>Firebase</label>
+                                            </div>
+
+
+
                                           </div>
 
                                           <div class="card-header1" style="margin-top: 10px;">
@@ -513,6 +584,58 @@
                                               <input type='checkbox' value='React' name='s9[]'  id='checkbox55'/>
                                               <label for='checkbox55'>React</label>
                                             </div>
+
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Express' name='s9[]'  id='checkbox460'/>
+                                              <label for='checkbox460'>Express</label>
+                                            </div>
+
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Django' name='s9[]'  id='checkbox461'/>
+                                              <label for='checkbox461'>Django</label>
+                                            </div>
+
+
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Rails' name='s9[]'  id='checkbox462'/>
+                                              <label for='checkbox462'>Rails</label>
+                                            </div>
+
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Laravel' name='s9[]'  id='checkbox463'/>
+                                              <label for='checkbox463'>Laravel</label>
+                                            </div>
+
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Angular' name='s9[]'  id='checkbox464'/>
+                                              <label for='checkbox464'>Angular</label>
+                                            </div>
+
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Ember' name='s9[]'  id='checkbox464'/>
+                                              <label for='checkbox464'>Ember</label>
+                                            </div>
+
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Backbone' name='s9[]'  id='checkbox465'/>
+                                              <label for='checkbox465'>Backbone</label>
+                                            </div>
+
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Symfony' name='s9[]'  id='checkbox466'/>
+                                              <label for='checkbox466'>Symfony</label>
+                                            </div>
+
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Yii' name='s9[]'  id='checkbox467'/>
+                                              <label for='checkbox467'>Yii</label>
+                                            </div>
+
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='MeteorJS' name='s9[]'  id='checkbox468'/>
+                                              <label for='checkbox468'>MeteorJS</label>
+                                            </div>
+
                                           </div>
                                           
                                         </div>
@@ -543,9 +666,9 @@
                                                   <h5>Jenis Pekerjaan</h5>
                                                 </div>
                                                 <select class="select-next1" name="pekerjaan_experience[]">
-                                                  <option value="sistem komputer">Sistem Komputer</option>
-                                                  <option value="teknik informatika">Teknik Informatika</option>
-                                                  <option value="sistem informasi">Sistem Informasi</option>
+                                                  <option value="Hardware Engineer">Hardware Engineer</option>
+                                                  <option value="Software Engineer">Software Engineer</option>
+                                                  <option value="IT Support">IT Support</option>
                                                 </select>
                                               </div>
                                               <div class="wid50 checkboxp" style="margin:0px;padding: 0px;">

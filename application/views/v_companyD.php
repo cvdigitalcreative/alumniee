@@ -93,6 +93,18 @@
                                               <label for='checkbox14'>Jakarta</label>
                                             </div>
                                             <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value="Tanggerang" name='sc2[]'  id='checkbox923'/>
+                                              <label for='checkbox923'>Tanggerang</label>
+                                            </div>
+                                             <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value="Bekasi" name='sc2[]'  id='checkbox921'/>
+                                              <label for='checkbox921'>Bekasi</label>
+                                            </div>
+                                             <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value="Bogor" name='sc2[]'  id='checkbox922'/>
+                                              <label for='checkbox922'>Bogor</label>
+                                            </div>
+                                            <div class="mt-2 checkboxp">
                                               <input type='checkbox' value="Bandung" name='sc2[]'  id='checkbox15'/>
                                               <label for='checkbox15'>Bandung</label>
                                             </div>
@@ -186,7 +198,7 @@
                                             </div>
                                           </div>
                                           <div class="card-header1 mt-3">
-                                            <h6>Gaji</h6>
+                                            <h6>Gaji : </h6>
                                           </div>
                                           <div class="">
                                             <select class="select-next1 mb-2" name="salary">
@@ -229,7 +241,7 @@
                                                 <h6>Minimun IPK <i for="minimun_ipk"></i></h6>
                                               </div>
                                               <div class="input-next">
-                                                <input type="number" name="minimun_ipk" step="0.01" min="2.5" max="4">
+                                                <input type="number" name="minimun_ipk" step="0.01" min="2.0" max="4">
                                               </div>
                                           </div>
                                           <div class="card-header1 mt-3">
@@ -264,6 +276,53 @@
                                               <input type='checkbox' value='Java' name='sc6[]'  id='checkbox48'/>
                                               <label for='checkbox48'>Java</label>
                                             </div>
+
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Python' name='sc6[]'  id='checkbox400'/>
+                                              <label for='checkbox400'>Python</label>
+                                            </div>
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Javascript' name='s5[]'  id='checkbox401'/>
+                                              <label for='checkbox401'>Javascript</label>
+                                            </div>
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Swift' name='sc6[]'  id='checkbox402'/>
+                                              <label for='checkbox402'>Swift</label>
+                                            </div>
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Ruby' name='sc6[]'  id='checkbox403'/>
+                                              <label for='checkbox403'>Ruby</label>
+                                            </div>
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Visual-Basic' name='s5[]'  id='checkbox404'/>
+                                              <label for='checkbox404'>Visual Basic</label>
+                                            </div>
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='React' name='sc6[]'  id='checkbox405'/>
+                                              <label for='checkbox405'>Golang</label>
+                                            </div>
+                                             <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='React' name='sc6[]'  id='checkbox406'/>
+                                              <label for='checkbox406'>React</label>
+                                            </div>
+                                             <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Rust' name='sc6[]'  id='checkbox407'/>
+                                              <label for='checkbox407'>Rust</label>
+                                            </div>
+                                             <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Kotlin' name='sc6[]'  id='checkbox407'/>
+                                              <label for='checkbox407'>Kotlin</label>
+                                            </div>
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Typescript' name='s5[]'  id='checkbox408'/>
+                                              <label for='checkbox408'>Typescript</label>
+                                            </div>
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Perl' name='sc6[]'  id='checkbox409'/>
+                                              <label for='checkbox409'>Perl</label>
+                                            </div>
+
+
                                             <div class="checkboxp">
                                               <input type='checkbox' value='PHP, HTML, CSS' name='sc6[]'  id='checkbox49'/>
                                               <label for='checkbox49'>PHP, HTML, CSS</label>
@@ -296,6 +355,26 @@
                                               <input type='checkbox' value='SQL Server' name='sc8[]'  id='checkbox55'/>
                                               <label for='checkbox55'>SQL Server</label>
                                             </div>
+                                             <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='MongoDB' name='sc8[]'  id='checkbox430'/>
+                                              <label for='checkbox430'>MongoDB</label>
+                                            </div>
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='MariaDB' name='sc8[]'  id='checkbox431'/>
+                                              <label for='checkbox431'>MariaDB</label>
+                                            </div>
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='DB2' name='sc8[]'  id='checkbox432'/>
+                                              <label for='checkbox432'>DB2</label>
+                                            </div>
+                                             <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Sap-Hana' name='sc8[]'  id='checkbox433'/>
+                                              <label for='checkbox433'>Sap Hana</label>
+                                            </div>
+                                             <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Firebase' name='sc8[]'  id='checkbox434'/>
+                                              <label for='checkbox434'>Firebase</label>
+                                            </div>
                                           
 
                                             <div class="card-header1" style="margin-top: 10px;">
@@ -322,6 +401,58 @@
                                               <input type='checkbox' value='React' name='sc9[]'  id='checkbox60'/>
                                               <label for='checkbox60'>React</label>
                                             </div>
+
+                                             <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Express' name='sc9[]'  id='checkbox460'/>
+                                              <label for='checkbox460'>Express</label>
+                                            </div>
+
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Django' name='sc9[]'  id='checkbox461'/>
+                                              <label for='checkbox461'>Django</label>
+                                            </div>
+
+
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Rails' name='sc9[]'  id='checkbox462'/>
+                                              <label for='checkbox462'>Rails</label>
+                                            </div>
+
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Laravel' name='sc9[]'  id='checkbox463'/>
+                                              <label for='checkbox463'>Laravel</label>
+                                            </div>
+
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Angular' name='sc9[]'  id='checkbox464'/>
+                                              <label for='checkbox464'>Angular</label>
+                                            </div>
+
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Ember' name='sc9[]'  id='checkbox464'/>
+                                              <label for='checkbox464'>Ember</label>
+                                            </div>
+
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Backbone' name='sc9[]'  id='checkbox465'/>
+                                              <label for='checkbox465'>Backbone</label>
+                                            </div>
+
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Symfony' name='sc9[]'  id='checkbox466'/>
+                                              <label for='checkbox466'>Symfony</label>
+                                            </div>
+
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='Yii' name='sc9[]'  id='checkbox467'/>
+                                              <label for='checkbox467'>Yii</label>
+                                            </div>
+
+                                            <div class="mt-2 checkboxp">
+                                              <input type='checkbox' value='MeteorJS' name='sc9[]'  id='checkbox468'/>
+                                              <label for='checkbox468'>MeteorJS</label>
+                                            </div>
+
                                           </div>
                                           <button type="button" class="button-next button1" style="margin-bottom:20px;"><span class=>Next</span></button>
                                         </div>
@@ -523,7 +654,7 @@
             },
             'minimun_ipk': {
                 required: "(Required)",
-                min: "(IPK tidak bisa kurang dari satu)",
+                min: "(IPK tidak bisa kurang dari dua)",
                 max: "(IPK tidak bisa lebih dari 4)"
             },
             'sc5[]': {
