@@ -4,6 +4,9 @@
     <title>Alumne</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Alumne.co.id">
+    <meta name="description" content="Find your career or talent with us">
+    <meta name="author" content="https://alumne.co.id/">
     
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,,500,600,700" rel="stylesheet">
 
