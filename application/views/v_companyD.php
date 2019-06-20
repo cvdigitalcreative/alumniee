@@ -399,7 +399,7 @@
                                         <div class="card-body">
                                           <div class="card1" id="4">
                                             <div class="input-next mb-2">
-                                              <h6><i>Setiap talent yang direkrut perusahaan wajib membayar biaya 10% dari total 6 bulan gaji talent tanpa memotong gaji talent</i></h6>
+                                              <h6><i>Perusahaan akan membayar biaya 10% dari total 6 bulan gaji kepada Alumne untuk setiap talent yang direkrut</i></h6>
                                             </div>
                                           </div>
                                           <div class="card-body">
