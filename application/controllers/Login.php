@@ -3,6 +3,7 @@ class Login extends CI_Controller{
     function __construct(){
         parent:: __construct();
         $this->load->model('m_account');
+        $this->load->model('m_talent');
     }
     function index(){
         $this->load->view('v_header_LR');
@@ -27,7 +28,12 @@ class Login extends CI_Controller{
             $this->session->set_userdata('email',$email);
             $this->session->set_userdata('id',$id);
             $this->session->set_userdata('nama',$nama);
-            redirect('Talent/campaign/'.$id);        
+            if( $this->m_talent->count_profile($id)!=0){
+                 redirect('Talent/campaign/'.$id);        
+             }else{
+                 redirect('Talent/Profile');        
+             }
+           
         }
         elseif($cCompany->num_rows() > 0){
             $this->session->set_userdata('masuk',true);

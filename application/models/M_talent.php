@@ -43,6 +43,9 @@
 			$this->db->query("UPDATE question SET jawaban = '$answer' WHERE talent_id = '$talent_id' AND question_id = '$question_id'");
 
 		}
+		function count_profile($talent_id){
+			return $this->db->query("SELECT * FROM profile WHERE talent_id = ".$talent_id." ")->num_rows();
+		}
 	}
 	
 ?>
