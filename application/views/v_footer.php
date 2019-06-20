@@ -4,7 +4,7 @@
           <div class="col-md">
             <div class="ftco-footer-widget mb-4 bg-primary p-4">
               <h2 class="ftco-heading-2">Alumne</h2>
-              <p>find your career/talent path with us</p>
+              <p>Find your career or talent with us</p>
               <ul class="ftco-footer-social list-unstyled mb-0">
                 <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
                 <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
@@ -18,8 +18,8 @@
             	<div class="block-23 mb-3">
 	              <ul>
 	                <li><span class="icon icon-map-marker"></span><span class="text">Jln. Lunjuk Jaya 19D Palembang,Sumatera Selatan</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+62 811-7199-210</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">admin@alumne.co.id</span></a></li>
+	                <li><a href="https://api.whatsapp.com/send?phone=628117199210"><span class="icon icon-phone"></span><span class="text">+62 811-7199-210</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@alumne.co.id</span></a></li>
 	              </ul>
 	            </div>
             </div>
